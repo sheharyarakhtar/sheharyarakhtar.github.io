@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#main {
+    margin-top: 30px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+#experience .job {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#experience .job h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#experience .role {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+#experience .duration {
+    font-style: italic;
+    color: #555;
+}
+
+#experience ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#experience ul li {
+    margin-bottom: 10px;
+}
