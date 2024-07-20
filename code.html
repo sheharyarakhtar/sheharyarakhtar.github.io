@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Code</title>
+    <title>Sheharyar Akhtar Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet">
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <!-- Prism.js Python Component -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1>Sheharyar Akhtar</h1>
+            <h2>Data Specialist</h2>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="code.html">Code</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">Resume</a></li>
+                        <div class="dropdown-content">
+                            <a href="assets/Resume_Sheharyar_Akhtar.pdf" download>AI/ML</a>
+                            <a href="assets/Resume - Data Engineering.pdf" download>Data Engineering</a>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </div>
     </header>
-    <div id="main" class="container">
-        <section id="code">
-            <h2>Code</h2>
-            <p>Showcase your code here, possibly with links to your GitHub repositories.</p>
-        </section>
-    </div>
-    <footer>
-        <p>My Portfolio &copy; 2024</p>
-    </footer>
+
+    <section>
+        <div class="container">
+            <h3>Sample Code</h3>
+            <pre><code class="language-python">
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Sheharyar"))
+            </code></pre>
+        </div>
+    </section>
 </body>
 </html>
