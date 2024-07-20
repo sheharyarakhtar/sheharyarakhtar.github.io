@@ -8,16 +8,25 @@
     <style>
         /* Inline styles for demonstration. Move these to your style.css */
         .content {
-            display: none; /* Hide content by default */
-            margin-top: 10px;
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
         }
 
         .heading {
             cursor: pointer;
             background-color: #f4f4f4;
-            padding: 10px;
+            padding: 10px 0;
             border: 1px solid #ddd;
             margin-bottom: 10px;
+        }
+        .heading {
+            cursor: pointer;
+            margin: 10px 0;
+            background-color: #ddd;
+            border-radius: 5px;
         }
 
         .heading:hover {
@@ -36,8 +45,11 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="code.html">Code</a></li>
                     <div class="dropdown">
-                        <li><a href="assets/Resume_Sheharyar_Akhtar.pdf" download>AI/ ML</a></li>
-                        <li><a href="assets/Resume - Data Engineering.pdf" download>Data Engineering</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <div class="dropdown-content">
+                            <a href="assets/Resume_Sheharyar_Akhtar.pdf" download>AI/ML</a>
+                            <a href="assets/Resume - Data Engineering.pdf" download>Data Engineering</a>
+                        </div>
                     </div>
                 </ul>
             </nav>
@@ -79,7 +91,6 @@
             <div class="heading" onclick="toggleContent('DSStandards')"><b>Setting Up Data Science Standards</b></div>
            <div id="DSStandards" class="content">
                           <ul>
-                <ul>
                     <li>Established a uniform directory structure for data science projects across the company to streamline workflows.
                         <ul>
                             <li>Created standard directories for various stages of the data science workflow: data extraction, data cleaning, featurization, model training, model inference, and postprocessing.</li>
@@ -101,7 +112,6 @@
                         </ul>
                     </li>
                 </ul>
-            </ul>
            </div>
 <!-- ====================================================== -->
             <div class="heading" onclick="toggleContent('HRDNI')"><b>HR Diversity and Inclusion Initiative</b></div>
@@ -253,12 +263,12 @@
 
     </div>
     <footer>
-    <div class="links">
-        <a class="linkedin" href="https://linkedin.com/in/sheharyarakhtar">LinkedIn</a> |
-        <a class="github" href="https://github.com/sheharyarakhtar">GitHub</a> |
-        <a class="medium" href="https://medium.com/@sheharyarakhtar">Medium</a>
-    </div>
-    <p>My Portfolio &copy; 2024</p>
-</footer>
+        <div class="links">
+            <a class="linkedin" href="https://linkedin.com/in/sheharyarakhtar">LinkedIn</a> |
+            <a class="github" href="https://github.com/sheharyarakhtar">GitHub</a> |
+            <a class="medium" href="https://medium.com/@sheharyarakhtar">Medium</a>
+        </div>
+        <p>My Portfolio &copy; 2024</p>
+    </footer>
 </body>
 </html>
