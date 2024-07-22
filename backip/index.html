@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for demonstration. Move these to your style.css */
+        .content {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .heading {
+            cursor: pointer;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .heading {
+            cursor: pointer;
+            margin: 10px 0;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .heading:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sheharyar Akhtar</h1>
+            <h2>Data Specialist</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">Resume</a></li>
+                        <div class="dropdown-content">
+                            <a href="assets/Resume_Sheharyar_Akhtar.pdf" download>AI/ML</a>
+                            <a href="assets/Resume - Data Engineering.pdf" download>Data Engineering</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main" class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a data scientist with a diverse skill set and a passion for solving complex data problems. My expertise in statistical analysis and business solutions, combined with my technical skills in R, Python, MySQL, and Postgres, make me a valuable asset to any organization. I have a proven track record of effectively analyzing large data sets to uncover trends and patterns that drive business decisions.</p>
+
+            <p>In addition to my data analysis skills, I have worked extensively with AWS and Azure for artificial intelligence, machine learning, and large language models. I have experience curating solutions from cloud platforms using cloud-native services such as AI services on Azure and AWS, and data engineering tools like Kinesis, Data Factory, and Kafka. My proficiency in creating multi-agent workflows, prompt engineering, and LLM fine-tuning further enhances my ability to develop and implement effective data-driven solutions.</p>
+
+            <p>Moreover, I have a passion for sharing my knowledge and insights with others. Whether through writing articles, blogs, or research projects, I enjoy delving into the latest developments in data science and sharing my findings with the community. My software engineering skills in Git, Docker, and Bash further bolster my ability to build and maintain robust data solutions.</p>
+
+            <p>I am confident that my technical expertise, passion for data, and commitment to continuous learning will make me a valuable addition to any team.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Systems Limited <span class="duration">August 2023 - Present</span></h3>
+                <p class="role"><em>Consultant - Data Science</em></p>
+            </div>
+<!-- ====================================================== -->
+            <div class="heading" onclick="toggleContent('webAppContent')"><b>Web Application for Data Ingestion</b></div>
+           <div id="webAppContent" class="content">
+                          <ul>
+                <li>Developed a web application for data ingestion using Plotly Dash with multiple user roles and permissions.
+                    <ul>
+                        <li><strong>Admin Tab</strong>: Enabled administrators to add and manage user permissions; restricted access to authorized users.</li>
+                        <li><strong>Uploader Tab</strong>: Allowed users with specific rights to upload required documents; tab visibility controlled by user permissions.</li>
+                        <li><strong>Validator Tab</strong>: Provided validators with the ability to download, validate, and approve uploaded files.</li>
+                    </ul>
+                </li>
+                <li>Implemented backend file validation using Pandera for schema validation and checks for coherent column names.</li>
+                <li>Integrated the application with Snowflake using Snowpark to push validated Excel/CSV files to the Snowflake database.</li>
+            </ul>
+           </div>
+<!-- ====================================================== -->
+            <div class="heading" onclick="toggleContent('DSStandards')"><b>Setting Up Data Science Standards</b></div>
+           <div id="DSStandards" class="content">
+                          <ul>
+                    <li>Established a uniform directory structure for data science projects across the company to streamline workflows.
+                        <ul>
+                            <li>Created standard directories for various stages of the data science workflow: data extraction, data cleaning, featurization, model training, model inference, and postprocessing.</li>
+                            <li>Developed dedicated Python scripts for each stage, ensuring consistency and ease of use across projects.</li>
+                            <li>Designed a main script to import and sequentially execute the individual stage scripts, simplifying MLOps processes and ensuring smooth pipeline execution.</li>
+                        </ul>
+                    </li>
+                    <li>Implemented company-wide MLFlow logging standards on Databricks.
+                        <ul>
+                            <li>Utilized Databricks' complementary MLFlow utility to log experiments, models, and metrics.</li>
+                            <li>Ensured all data science projects followed these standards, improving reproducibility and collaboration.</li>
+                        </ul>
+                    </li>
+                    <li>Set standards for pipeline orchestration and dataset logging in Azure Machine Learning Studio.
+                        <ul>
+                            <li>Developed guidelines for logging datasets, hyperparameters, model results, and pickle files in Azure and MLFlow.</li>
+                            <li>Ensured all logged information was cross-referenced and linked, providing a comprehensive view of model performance and lifecycle.</li>
+                            <li>Facilitated tracking and versioning of datasets and models, enhancing transparency and accountability in the model development process.</li>
+                        </ul>
+                    </li>
+                </ul>
+           </div>
+<!-- ====================================================== -->
+            <div class="heading" onclick="toggleContent('HRDNI')"><b>HR Diversity and Inclusion Initiative</b></div>
+           <div id="HRDNI" class="content">
+            <ul>
+                    <li>Developed a solution to forecast gender representation in management positions by December 2025 using historical trends in promotions, turnover, and recruitments.
+                        <ul>
+                            <li>Used a multi-variate forecasting technique combining tree-based algorithms and exponential smoothing models.</li>
+                        </ul>
+                    </li>
+                    <li>Leveraged SQL to understand HR data and create predictive features in Snowflake.
+                        <ul>
+                            <li>Extracted and cleaned data, generated lagged features, and prepared the dataset for modeling in Azure ML Studio.</li>
+                        </ul>
+                    </li>
+                    <li>Implemented company-wide data science standards throughout the project in Azure ML Studio.
+                        <ul>
+                            <li>Ensured uniform directory structure and script organization for data extraction, cleaning, featurization, model training, inference, and postprocessing.</li>
+                            <li>Logged datasets, models, metrics, and parameters using MLFlow for comprehensive tracking and reproducibility.</li>
+                        </ul>
+                    </li>
+                    <li>Conducted feature engineering and model selection.
+                        <ul>
+                            <li>Implemented grid search using tree-based algorithms and feature selection using Random Forest (RF).</li>
+                            <li>Performed incremental feature additions and subtractions to identify the best features.</li>
+                        </ul>
+                    </li>
+                    <li>Ran the model to determine the best regression model for forecasting.
+                        <ul>
+                            <li>Forecasted each feature for the coming months until December 2025.</li>
+                            <li>Performed inference using the trained regression model on forecasted features.</li>
+                        </ul>
+                    </li>
+                    <li>Postprocessed forecasts for key performance indicators (KPIs) – promotions, turnover, and recruitment.
+                        <ul>
+                            <li>Removed or corrected forecasts based on mathematical intuition and business rules.</li>
+                        </ul>
+                    </li>
+                    <li>Pushed the processed data into a Snowflake table for visualization.
+                        <ul>
+                            <li>Imported data into a Plotly Dash frontend to create various charts and plots for business users.</li>
+                            <li>Added a simulation tab in the frontend to enable users to make counterfactual inferences and adjust HR practices to achieve the 2025 goal.</li>
+                        </ul>
+                    </li>
+                          
+           </div>
+<!-- ====================================================== -->
+            <div class="heading" onclick="toggleContent('Internal')"><b>Internal Projects</b></div>
+           <div id="Internal" class="content">
+            <ul>
+                    <li><strong>Asset Development for Credit Scoring of Customers</strong>
+                        <ul>
+                            <li>Generated synthetic data for model training and testing.</li>
+                            <li>Implemented weight of evidence with logistic regression and tree-based algorithm grid search for credit scoring.</li>
+                            <li>Developed a reusable credit scoring asset for client pitches.</li>
+                            <li>Incorporated MLflow for model tracking and Sweetviz for exploratory data analysis.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Client RFPs Analysis and Solution Architecting</strong>
+                        <ul>
+                            <li>Reviewed and analyzed client Request for Proposals (RFPs) to understand requirements.</li>
+                            <li>Engaged with clients to gather detailed expectations and project scope.</li>
+                            <li>Curated tailored solutions using platforms like AWS, Azure, and Cloudera.</li>
+                            <li>Performed architectural design, cost estimation, resource allocation, and created Bill of Quantities (BOQ) and Work Breakdown Structures (WBS).</li>
+                        </ul>
+                    </li>
+                </ul>
+           </div>
+<!-- ====================================================== -->
+            <div class="heading" onclick="toggleContent('LLMWorkflows')"><b>LLM Workflows</b></div>
+            <div id="LLMWorkflows" class="content">
+                <ul>
+                    <li><strong>Custom RNN Implementation</strong>
+                        <ul>
+                            <li>Developed a complete Recurrent Neural Network (RNN) from scratch using Numpy in Python.</li>
+                            <li>Focused on understanding RNN algorithms, including forward and backward passes, and gradient calculations.</li>
+                            <li>Enhanced knowledge of backpropagation through time (BPTT) and sequence handling.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Proof of Concept with Prompt Engineering</strong>
+                        <ul>
+                            <li>Created a PoC to explore prompt engineering for ML tasks such as risk classification and churn modeling.</li>
+                            <li>Utilized few-shot classification techniques to assess LLM performance based on customer histories.</li>
+                            <li>Evaluated strengths and limitations of prompt-based approaches for classification tasks.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Retrieval-Augmented Generation (RAG) Architecture</strong>
+                        <ul>
+                            <li>Designed and implemented a RAG architecture using LangChain, Gemini, and FAISS.</li>
+                            <li>Combined LLM capabilities with efficient document retrieval for enhanced response generation.</li>
+                            <li>Integrated LangChain for prompt management, Gemini for LLM tasks, and FAISS for similarity search.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Multi-Agent Consulting Workflow</strong>
+                        <ul>
+                            <li>Developed a multi-agent system for consulting tasks with specialized agents:</li>
+                            <li>Agent 1: Used RAG to analyze client RFP documents and clarify needs.</li>
+                            <li>Agent 2: Researched solutions using Google and ResearchGate via DuckDuckGoSearch and Serper API or generated solutions based on understanding.</li>
+                            <li>Agent 3: Orchestrated the solution workflow, detailing each action step.</li>
+                            <li>Agent 4: Architected solutions using cloud services based on client requirements, leveraging CrewAI custom tools and RAGs from Gemini, Hugging Face, and FAISS.</li>
+                            <li>Addressed accuracy and hallucination issues, providing a framework for automating consulting tasks.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+<!-- ====================================================== -->
+            <ul>
+            </ul>
+            <div class="job">
+                <h3>Afiniti <span class="duration">January 2023 - August 2023</span></h3>
+                <p class="role"><em>Data Scientist ll</em></p>
+            </div>
+            <ul>
+                <li><b>Trained and led up to 5 resources</b> across different accounts across the Iberia region to define strategic roadmaps and ensure high-quality deliverables and timely work</li>
+                <li>Optimized the modeling process using <b>parallelized computing</b> and developed new features to the pipeline, as part of the Balerion Developers team, <b>reducing model training-time by over 50%</b>  </li>
+                <li><b>Transformed raw data feeds into meaningful modeling datasets</b> using stored procedures in PostgreSQL and MySQL</li>
+                <li>Generated <b>NLP features</b> created from raw customer intent picked up by the IVR in the call center. This allowed better customer-to-agent pairing, <b>increasing revenue for the client</b></li>
+                <li>Utilized <b>data mining methodologies</b> such as churn and clustering models to <b>uncover hidden customer trends and changes in the client’s environment</b>, which helped in creating robust modeling strategies resulting in over 2 million EUR/Annum in revenue</li>
+                <li>Independently <b>wrote advanced Bayesian probabilistic models in Stan</b>, helping accounts across South America and Europe region to increase validations by over 10% </li>
+                <li>Pioneered a <b>sales maturity forecasting system </b> to predict customer holdings 30-days after a call, ensuring compliance with the client's requirement of a 30-day maturity period</li> 
+                <li>Implemented a <b>customer churn prediction pipeline</b> to create churn probability buckets that were used as features to the models on the <b>customer retention</b> queue </li>
+                <li>Enhanced the <b>web application front-end</b> client KPIs developed on R Shiny by incorporating <b>interactive features and counterfactuals </b></li>
+            </ul>
+            <div class="job">
+                <h3>Afiniti <span class="duration">April 2021 - January 2023</span></h3>
+                <p class="role"><em>Data Scientist l</em></p>
+            </div>
+            <ul>
+                <li>Implemented <b>Bayesian MCMC statistical models </b> and <b>decision trees</b>  to optimize agent/caller interaction in call centers, increasing client revenue by over 5% across multiple accounts</li> 
+                <li>Developed interactive <b>RMarkdown/R Shiny dashboards </b> to track and visualize important KPIs for relevant stakeholders</li>
+                <li>Spearheaded a machine learning pipeline using <b>LGBoost/RandomForest model </b>which was able to predict 60-day revenue outcome with 93% accuracy based on 1-day predictors  </li>
+                <li><b>Engineered customer features</b> that improved model validations by over 50% when included in the modeling process by using analytical techniques to <b>understand data using SQL and PostgreSQL</b> </li>
+                <li>Collaborated with an international team of data resources, developers, client executives and project managers to <b>launch Afiniti on two new clients</b> in the Iberia region </li>
+            </ul>
+        </section>
+        <script>
+            function toggleContent(id) {
+                var content = document.getElementById(id);
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
+        </script>
+
+    </div>
+    <footer>
+        <div class="links">
+            <a class="linkedin" href="https://linkedin.com/in/sheharyarakhtar">LinkedIn</a> |
+            <a class="github" href="https://github.com/sheharyarakhtar">GitHub</a> |
+            <a class="medium" href="https://medium.com/@sheharyarakhtar">Medium</a>
+        </div>
+        <p>My Portfolio &copy; 2024</p>
+    </footer>
+</body>
+</html>
