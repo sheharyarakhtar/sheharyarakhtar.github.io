@@ -738,6 +738,34 @@ img{
     width: 85%;
 }
 
+/*Azure Services*/
+.skills__blob{
+    width: 90%;
+}
+.skills__mlstudio{
+    width: 95%;
+}
+.skills__aistudio{
+    width: 65%;
+}
+.skills__openai{
+    width: 70%;
+}
+.skills__aivision{
+    width: 40%;
+}
+.skills__sqldb{
+    width: 80%;
+}
+.skills__ado{
+    width: 85%;
+}
+.skills__app{
+    width: 65%;
+}
+.skills__databricks{
+    width: 75%;
+}
 
 .skills__close .skills__list{
     height: 0;
