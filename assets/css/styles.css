@@ -690,6 +690,9 @@ img{
 .skills__seaborn{
     width: 75%;
 }
+.skills__lg{
+    width: 45%;
+}
 
 /*AWS*/
 .skills__iam{
