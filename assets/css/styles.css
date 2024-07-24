@@ -966,6 +966,12 @@ img{
 	color: var(--first-color);
 }
 
+
+.portfolio_tech_icons img {
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Maintain aspect ratio */
+    }
+
 .swiper-button-prev::after,
 .swiper-button-next::after{
     content:'';
@@ -1403,9 +1409,11 @@ img{
         width: 100%; 
     }
 
-    /* .portfolio__img{
+     .portfolio__img{
+        height: auto;
+        width: auto;
 
-    } */
+    } 
 
     .certification__container{
         grid-template-columns: repeat(2, 1fr);
