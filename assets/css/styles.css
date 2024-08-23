@@ -886,7 +886,17 @@ img{
     transition: .3s;
 }
 
-.qualification__modal-content{
+
+
+.qualification__modal-content img {
+    width: 300px;   /* Set the desired width */
+    height: auto;   /* Adjust height automatically to maintain aspect ratio */
+    display: block; /* Ensures the image doesn't add extra space around it */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image doesn’t exceed the container's width */
+}
+
+/* .qualification__modal-content{
     position: relative;
     background-color: var(--container-color);
     padding: 1.5rem;
@@ -894,7 +904,7 @@ img{
     border-radius: .5rem;
     overflow: auto;
     max-height: 100%;
-}
+} */
 
 .qualification__modal-title{
     font-size: var(--h3-font-size);
