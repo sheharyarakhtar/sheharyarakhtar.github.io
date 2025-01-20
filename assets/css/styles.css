@@ -385,7 +385,7 @@ img{
 .button--link{
   padding: 0;
   background-color: transparent;
-  color: var(--first-color);  
+  color: var(--first-color);
 }
 
 .button--link:hover{
@@ -425,7 +425,7 @@ img{
 
 .about__info-title,
 .about__info-name{
-    display: block; 
+    display: block;
     text-align: center;
 }
 
@@ -788,6 +788,7 @@ img{
 }
 
 /*==================== QUALIFICATION ====================*/
+{{REWRITTEN_CODE}}
 .qualification__tabs{
     display: flex;
     justify-content: space-evenly;
@@ -818,12 +819,14 @@ img{
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    color: var(--title-color); /* Added for light mode black text */
 }
 
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    color: var(--title-color); /* Added for light mode black text */
 }
 
 .qualification__calender{
@@ -862,11 +865,13 @@ img{
 .qualification__button{
     cursor: pointer;
     font-size: var(--small-font-size);
+    color: var(--title-color); /* Added for light mode black text */
 }
 
 .qualification__button-modal{
     cursor: pointer;
-    font-size: var(--small-font-size);  
+    font-size: var(--small-font-size);
+    color: var(--title-color); /* Added for light mode black text */
 }
 
 .qualification__modal{
@@ -896,20 +901,14 @@ img{
     max-width: 100%; /* Ensures the image doesn’t exceed the container's width */
 }
 
-/* .qualification__modal-content{
-    position: relative;
-    background-color: var(--container-color);
-    padding: 1.5rem;
-    margin: 0.5rem;
-    border-radius: .5rem;
-    overflow: auto;
-    max-height: 100%;
-} */
+
 
 .qualification__modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+    color: var(--title-color); /* Added for light mode black text */
+
 }
 
 .qualification__modal-close{
@@ -1360,10 +1359,10 @@ img{
     .qualification__modal{
         margin-left: auto;
         margin-right: auto;
-        width: 100%; 
+        width: 100%;
     }
     .qualification__modal-content{
-        width: 100%; 
+        width: 100%;
     }
 
     .research__container{
@@ -1416,17 +1415,17 @@ img{
     .qualification__modal{
         margin-left: auto;
         margin-right: auto;
-        width: 100%; 
+        width: 100%;
     }
     .qualification__modal-content{
-        width: 100%; 
+        width: 100%;
     }
 
      .portfolio__img{
         height: auto;
         width: auto;
 
-    } 
+    }
 
     .certification__container{
         grid-template-columns: repeat(2, 1fr);
@@ -1545,10 +1544,10 @@ img{
     .qualification__modal{
         margin-left: auto;
         margin-right: auto;
-        width: 100%; 
+        width: 100%;
     }
     .qualification__modal-content{
-        width: 50%; 
+        width: 50%;
     }
 
     .research__container{
@@ -1613,10 +1612,10 @@ img{
     .qualification__modal{
         margin-left: auto;
         margin-right: auto;
-        width: 100%; 
+        width: 100%;
     }
     .qualification__modal-content{
-        width: 50%; 
+        width: 50%;
     }
 
     .portfolio__content,
