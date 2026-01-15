@@ -208,6 +208,38 @@
                             <p>Human evaluators interpret "good reasoning" differently. At scale, this variance destroys signal. The feedback loop was opaque—we couldn't easily trace whether calibration improvements actually improved downstream model behavior.</p>
                         </div>
                         
+                        <div class="project__diagram">
+                            <svg viewBox="0 0 700 140" class="architecture-diagram">
+                                <rect x="10" y="50" width="90" height="40" rx="4" class="diagram-node"/>
+                                <text x="55" y="75" class="diagram-text">Raw Tasks</text>
+                                
+                                <rect x="130" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="180" y="75" class="diagram-text">150+ Contributors</text>
+                                
+                                <rect x="260" y="50" width="90" height="40" rx="4" class="diagram-node-highlight"/>
+                                <text x="305" y="75" class="diagram-text">Calibration</text>
+                                
+                                <rect x="380" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="430" y="75" class="diagram-text">Quality Metrics</text>
+                                
+                                <rect x="510" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="560" y="75" class="diagram-text">LLM Training</text>
+                                
+                                <rect x="180" y="110" width="120" height="25" rx="4" class="diagram-node-secondary"/>
+                                <text x="240" y="127" class="diagram-text-small">Colab/Docker/GCP</text>
+                                
+                                <rect x="380" y="110" width="100" height="25" rx="4" class="diagram-node-secondary"/>
+                                <text x="430" y="127" class="diagram-text-small">KPI Dashboards</text>
+                                
+                                <path d="M100 70 L130 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M230 70 L260 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M480 70 L510 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M240 90 L240 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                                <path d="M430 90 L430 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                            </svg>
+                        </div>
+                        
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
@@ -250,6 +282,35 @@
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
                             <p>We needed to separate agent baseline skill, customer propensity, and interaction effect. The signal was buried in noise—thousands of calls per day, but pairing effect might only be a few percentage points. Production latency constraints (sub-100ms) meant complex models weren't viable.</p>
+                        </div>
+                        
+                        <div class="project__diagram">
+                            <svg viewBox="0 0 700 140" class="architecture-diagram">
+                                <rect x="10" y="50" width="90" height="40" rx="4" class="diagram-node"/>
+                                <text x="55" y="75" class="diagram-text">Incoming Call</text>
+                                
+                                <rect x="130" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="180" y="75" class="diagram-text">Feature Extract</text>
+                                
+                                <rect x="260" y="50" width="110" height="40" rx="4" class="diagram-node-highlight"/>
+                                <text x="315" y="70" class="diagram-text">Bayesian IRT</text>
+                                <text x="315" y="85" class="diagram-text-small">(Stan/CmdStan)</text>
+                                
+                                <rect x="400" y="50" width="90" height="40" rx="4" class="diagram-node"/>
+                                <text x="445" y="75" class="diagram-text">Route Call</text>
+                                
+                                <rect x="520" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="570" y="75" class="diagram-text">Revenue Signal</text>
+                                
+                                <rect x="320" y="110" width="120" height="25" rx="4" class="diagram-node-secondary"/>
+                                <text x="380" y="127" class="diagram-text-small">A/B Holdout Testing</text>
+                                
+                                <path d="M100 70 L130 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M230 70 L260 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M370 70 L400 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M490 70 L520 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M380 90 L380 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                            </svg>
                         </div>
                         
                         <div class="project__section">
@@ -296,6 +357,40 @@
                             <p>Regulatory explainability conflicts with model complexity. Data pipelines needed both batch and real-time scoring across AWS and Azure. 50+ business units submitting data in different formats, currencies, reporting standards.</p>
                         </div>
                         
+                        <div class="project__diagram">
+                            <svg viewBox="0 0 700 140" class="architecture-diagram">
+                                <rect x="10" y="50" width="80" height="40" rx="4" class="diagram-node"/>
+                                <text x="50" y="75" class="diagram-text">Raw Data</text>
+                                
+                                <rect x="120" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="170" y="75" class="diagram-text">PySpark ETL</text>
+                                
+                                <rect x="250" y="50" width="100" height="40" rx="4" class="diagram-node"/>
+                                <text x="300" y="75" class="diagram-text">Feature Store</text>
+                                
+                                <rect x="380" y="50" width="90" height="40" rx="4" class="diagram-node-highlight"/>
+                                <text x="425" y="75" class="diagram-text">MLflow</text>
+                                
+                                <rect x="500" y="50" width="80" height="40" rx="4" class="diagram-node"/>
+                                <text x="540" y="75" class="diagram-text">Scoring API</text>
+                                
+                                <rect x="610" y="50" width="70" height="40" rx="4" class="diagram-node"/>
+                                <text x="645" y="75" class="diagram-text">SHAP</text>
+                                
+                                <rect x="380" y="110" width="90" height="25" rx="4" class="diagram-node-secondary"/>
+                                <text x="425" y="127" class="diagram-text-small">Drift Monitor</text>
+                                
+                                <text x="350" y="15" class="diagram-text-small" style="fill: var(--text-muted)">AWS + Azure</text>
+                                
+                                <path d="M90 70 L120 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M220 70 L250 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M470 70 L500 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M580 70 L610 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M425 90 L425 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                            </svg>
+                        </div>
+                        
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
@@ -338,6 +433,39 @@
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
                             <p>Regimes are latent—you can only infer them. Hindsight bias makes historical analysis misleading. The real challenge: distinguish volatility levels from regime transitions. High volatility in a stable regime is different from medium volatility during a transition.</p>
+                        </div>
+                        
+                        <div class="project__diagram">
+                            <svg viewBox="0 0 700 140" class="architecture-diagram">
+                                <rect x="10" y="50" width="80" height="40" rx="4" class="diagram-node"/>
+                                <text x="50" y="75" class="diagram-text">Price Data</text>
+                                
+                                <rect x="120" y="30" width="90" height="35" rx="4" class="diagram-node"/>
+                                <text x="165" y="52" class="diagram-text">Realized Vol</text>
+                                
+                                <rect x="120" y="75" width="90" height="35" rx="4" class="diagram-node"/>
+                                <text x="165" y="97" class="diagram-text">FFT/Spectral</text>
+                                
+                                <rect x="240" y="45" width="110" height="50" rx="4" class="diagram-node-highlight"/>
+                                <text x="295" y="70" class="diagram-text">Hidden Markov</text>
+                                <text x="295" y="85" class="diagram-text-small">Model</text>
+                                
+                                <rect x="380" y="45" width="100" height="50" rx="4" class="diagram-node"/>
+                                <text x="430" y="70" class="diagram-text">Regime State</text>
+                                <text x="430" y="85" class="diagram-text-small">+ Uncertainty</text>
+                                
+                                <rect x="510" y="45" width="110" height="50" rx="4" class="diagram-node"/>
+                                <text x="565" y="65" class="diagram-text">Historical</text>
+                                <text x="565" y="80" class="diagram-text">Context</text>
+                                <text x="565" y="95" class="diagram-text-small">(not prediction)</text>
+                                
+                                <path d="M90 60 L120 48" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M90 80 L120 93" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M210 48 L240 60" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M210 93 L240 80" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M480 70 L510 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                            </svg>
                         </div>
                         
                         <div class="project__section">

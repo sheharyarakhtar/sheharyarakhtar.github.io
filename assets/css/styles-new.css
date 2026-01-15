@@ -469,6 +469,71 @@ img {
     color: var(--accent);
 }
 
+/*==================== DIAGRAMS ====================*/
+.project__diagram {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.architecture-diagram {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.diagram-node {
+    fill: var(--bg-card);
+    stroke: var(--border);
+    stroke-width: 1;
+}
+
+.diagram-node-highlight {
+    fill: var(--bg-card);
+    stroke: var(--accent-dim);
+    stroke-width: 2;
+}
+
+.diagram-node-secondary {
+    fill: var(--bg-secondary);
+    stroke: var(--border-light);
+    stroke-width: 1;
+}
+
+.diagram-text {
+    fill: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 11px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.diagram-text-small {
+    fill: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.diagram-arrow {
+    stroke: var(--text-muted);
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.diagram-arrow-dashed {
+    stroke: var(--accent-dim);
+    stroke-width: 1;
+    stroke-dasharray: 4 2;
+    fill: none;
+}
+
 /*==================== MCF ====================*/
 .mcf {
     background: var(--bg-secondary);
