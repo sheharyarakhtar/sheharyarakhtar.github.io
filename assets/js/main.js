@@ -292,17 +292,23 @@ if (homeSubtitle) {
 }
 
 /*==================== PRELOADER ====================*/
-window.addEventListener('load', () => {
+function hidePreloader() {
     const preloader = document.querySelector('.preloader')
-    if (preloader) {
+    if (preloader && !preloader.classList.contains('preloader--hidden')) {
+        preloader.classList.add('preloader--hidden')
         setTimeout(() => {
-            preloader.classList.add('preloader--hidden')
-            setTimeout(() => {
-                preloader.remove()
-            }, 500)
-        }, 300)
+            preloader.remove()
+        }, 500)
     }
+}
+
+// Hide preloader when page loads
+window.addEventListener('load', () => {
+    setTimeout(hidePreloader, 300)
 })
+
+// Fallback: hide preloader after 3 seconds regardless
+setTimeout(hidePreloader, 3000)
 
 /*==================== CONTACT FORM SUBMISSION ====================*/
 let submittedForm = false
