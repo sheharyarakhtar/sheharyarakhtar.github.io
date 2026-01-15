@@ -297,18 +297,23 @@ function hidePreloader() {
     if (preloader && !preloader.classList.contains('preloader--hidden')) {
         preloader.classList.add('preloader--hidden')
         setTimeout(() => {
-            preloader.remove()
+            if (preloader.parentNode) {
+                preloader.remove()
+            }
         }, 500)
     }
 }
 
-// Hide preloader when page loads
-window.addEventListener('load', () => {
-    setTimeout(hidePreloader, 300)
+// Multiple triggers to ensure preloader hides
+document.addEventListener('DOMContentLoaded', () => {
+    // Give a small delay for styles to apply
+    setTimeout(hidePreloader, 500)
 })
 
-// Fallback: hide preloader after 3 seconds regardless
-setTimeout(hidePreloader, 3000)
+window.addEventListener('load', hidePreloader)
+
+// Aggressive fallback for GitHub Pages - hide after 2 seconds no matter what
+setTimeout(hidePreloader, 2000)
 
 /*==================== CONTACT FORM SUBMISSION ====================*/
 let submittedForm = false
