@@ -164,17 +164,21 @@ const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'uil-sun'
 
+// Previously selected theme (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
+// We obtain the current theme that the interface has by validating the light-theme class
 const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'light' : 'dark'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
+// We validate if the user previously chose a theme
 if (selectedTheme) {
     document.body.classList[selectedTheme === 'light' ? 'add' : 'remove'](lightTheme)
     themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](iconTheme)
 }
 
+// Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle(lightTheme)
     themeButton.classList.toggle(iconTheme)
@@ -197,6 +201,7 @@ const observer = new IntersectionObserver((entries) => {
     })
 }, observerOptions)
 
+// Observe elements for fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll(
         '.section__title, .section__subtitle, .about__img, .about__data, ' +
@@ -210,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el)
     })
 
+    // Stagger animation for lists
     const staggerContainers = document.querySelectorAll(
         '.about__info, .nav__list, .footer__links, .footer__socials'
     )
@@ -224,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const footerCopy = document.querySelector('.footer__copy')
     if (footerCopy) {
-        footerCopy.innerHTML = '© ' + new Date().getFullYear() + ' Sheharyar Akhtar. All rights reserved'
+        footerCopy.innerHTML = `&#169; ${new Date().getFullYear()} Sheharyar Akhtar. All rights reserved`
     }
 })
 
@@ -246,11 +252,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const homeSubtitle = document.querySelector('.home__subtitle')
 if (homeSubtitle) {
     const titles = [
-        'Quantitative Systems Builder',
-        'Decision Intelligence Engineer',
-        'LLM Evaluation Lead @ Turing',
-        'Bayesian Modeling Expert',
-        'Founder — Markov Chain Finance'
+        'Senior Data Scientist @ Turing',
+        'AI/ML Engineer',
+        'Cloud Solutions Architect',
+        'Data Engineering Expert'
     ]
     let titleIndex = 0
     let charIndex = 0
@@ -271,7 +276,7 @@ if (homeSubtitle) {
         }
 
         if (!isDeleting && charIndex === currentTitle.length) {
-            typingSpeed = 3000
+            typingSpeed = 3000 // Pause at end
             isDeleting = true
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false
@@ -282,6 +287,7 @@ if (homeSubtitle) {
         setTimeout(typeEffect, typingSpeed)
     }
 
+    // Start typing effect after page loads
     setTimeout(typeEffect, 2500)
 }
 
@@ -310,12 +316,16 @@ if (contactForm) {
     })
 }
 
+// Listen for iframe load to show success message
 const hiddenIframe = document.getElementById('hidden_iframe')
 if (hiddenIframe) {
     hiddenIframe.addEventListener('load', function() {
         if (submittedForm) {
+            // Show success message
             formSuccess.classList.add('show')
+            // Reset form
             contactForm.reset()
+            // Hide success after 5 seconds
             setTimeout(() => {
                 formSuccess.classList.remove('show')
                 submittedForm = false
