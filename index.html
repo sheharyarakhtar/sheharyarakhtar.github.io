@@ -4,9 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Sheharyar Akhtar - Senior Data Scientist specializing in AI/ML, Cloud Architecture, and Data Engineering. Building intelligent solutions with cutting-edge technology.">
+    <meta name="keywords" content="Data Scientist, AI, Machine Learning, Cloud Architecture, AWS, Azure, Python, Data Engineering">
+    <meta name="author" content="Sheharyar Akhtar">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Sheharyar Akhtar - Senior Data Scientist">
+    <meta property="og:description" content="Building intelligent solutions at the intersection of Data Science, AI/ML, and Cloud Architecture.">
+    <meta property="og:type" content="website">
+    
     <!--==================== FAVICON ====================-->
     <link rel="icon" href="assets/img/memoji.jpg">
+
+    <!--==================== GOOGLE FONTS ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -16,6 +29,49 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--==================== PRELOADER STYLES ====================-->
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: hsl(220, 15%, 8%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .preloader--hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .preloader__content {
+            text-align: center;
+        }
+        .preloader__spinner {
+            width: 40px;
+            height: 40px;
+            border: 2px solid hsl(220, 15%, 18%);
+            border-top-color: hsl(38, 61%, 50%);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1.5rem;
+        }
+        .preloader__text {
+            color: hsl(220, 10%, 65%);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 
     <!--    =========== Tracker =========      -->
     <!-- Google tag (gtag.js) -->
@@ -30,6 +86,14 @@
 </head>
 
 <body>
+    <!--==================== PRELOADER ====================-->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__spinner"></div>
+            <span class="preloader__text">Loading...</span>
+        </div>
+    </div>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -135,12 +199,12 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Sheharyar</h1>
-                        <h3 class="home__subtitle">Senior Data Scientist @ Turing</h3>
-                        <p class="home__description">Data and AI Expert, Cloud Solutions Architect and Tech Enthusiast
+                        <h1 class="home__title">Sheharyar Akhtar</h1>
+                        <h3 class="home__subtitle">Quantitative Systems Builder</h3>
+                        <p class="home__description">I don't build models — I design decision systems. Bridging Bayesian inference, LLM evaluation, and quantitative finance to reduce how systems make people fail.
                         </p>
                         <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
+                            Let's Connect <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -159,44 +223,41 @@
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
+            <span class="section__subtitle">Decision-First Builder</span>
 
             <div class="about__container container grid">
                 <img src="assets/img/About/chess.jpg" alt="" class="about__img">
 
                 <div class="about__data">
                     <p class="about__description">
-                        A data and AI specialist with over four years of experience, I thrive in collaborative environments, building data-driven solutions using cutting-edge AI/ML technologies. My expertise spans data science, statistical modeling, and data transformation, leveraging cloud platforms like AWS and Azure to design and deploy robust, cloud-native services.  I'm proficient in Python, R, SQL, and various data engineering tools. Beyond my professional pursuits, I'm passionate about sharing my knowledge through technical articles and exploring the strategic intricacies of chess.
+                        I operate at the intersection of <strong>statistical modeling</strong>, <strong>LLM systems</strong>, and <strong>quantitative finance</strong>. My work isn't about predictions — it's about designing frameworks that sit between data and decisions, reducing emotional error and surfacing structure others miss.
+                        <br><br>
+                        From Bayesian behavioral models at Afiniti to LLM evaluation systems at Turing, I've built end-to-end decision infrastructure that survives real-world constraints. Currently building <strong>Markov Chain Finance</strong> — tools that reframe financial decisions inside historical and behavioral context.
                     </p>
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">9</span>
-                            <span class="about__info-name">Data Projects <br> Completed</span>
+                            <span class="about__info-title">4+</span>
+                            <span class="about__info-name">Years <br> Experience</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">7</span>
-                            <span class="about__info-name">Articles <br> Written</span>
+                            <span class="about__info-title">10+</span>
+                            <span class="about__info-name">Production <br> Systems</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">1</span>
-                            <span class="about__info-name">Published <br> Papers</span>
+                            <span class="about__info-title">$5M+</span>
+                            <span class="about__info-name">Pipeline <br> Value Added</span>
                         </div>
                     </div>
 
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/Resume_Sheharyar_Akhtar.pdf" class="button button--flex resume">
-                            DS Resume<i class="uil uil-download-alt button__icon"></i>
+                            Resume<i class="uil uil-download-alt button__icon"></i>
                         </a>
-                        <a download="" href="assets/pdf/Resume - Data Engineering.pdf" class="button button--flex resume">
-                            DE Resume<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/Generative_AI_Resume.pdf" class="button button--flex resume">
-                            GenAI Resume<i class="uil uil-download-alt button__icon"></i>
+                        <a href="https://www.linkedin.com/in/sheharyarakhtar" target="_blank" class="button button--flex resume">
+                            LinkedIn<i class="uil uil-linkedin button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -207,7 +268,7 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My Technical Level</span>
+            <span class="section__subtitle">Technical Depth</span>
 
             <div class="skills__container container grid">
                 <div>
@@ -288,7 +349,7 @@
 
                             <div>
                                 <h1 class="skills__title">Microsoft Azure</h1>
-                                <span class="skills__subtitle">Azure Cloud Infranstructure</span>
+                                <span class="skills__subtitle">Azure Cloud Infrastructure</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -415,7 +476,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">PostgrSQL</h3>
+                                    <h3 class="skills__name">PostgreSQL</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -1038,8 +1099,8 @@
                             </div>
 
                             <div>
-                                <h3 class="qualification__title">Sr. Data Scientist & Calibrator</h3>
-                                <span class="qualification__subtitle">Turing</span>
+                                <h3 class="qualification__title">Sr. Data Scientist → Pod Lead → Tooling Champion</h3>
+                                <span class="qualification__subtitle">Turing (Meta LLaMA Projects)</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     September 2024 - Present
@@ -1047,7 +1108,7 @@
 
                                 <span
                                     class="button button--flex button--small button--link qualification__button-modal">
-                                    What I did here
+                                    View Details
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </span>
 
@@ -1059,35 +1120,23 @@
                                         <ul class="qualification__modal-works grid">
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Progressed from Trainer to Team Lead to Calibrator, demonstrating exceptional performance and leadership in Meta's Llama 3.3 model training project.</p>
+                                                <p><strong>LLM Evaluation Architecture:</strong> Evaluated issue-to-patch reasoning trajectories for SWE tasks, shaping how reasoning quality is measured at scale for Meta's LLaMA models.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Currently serving as a Calibrator, ensuring consistency and quality across team leads' reviews and feedback to trainers, maintaining high standards in training data generation.</p>
+                                                <p><strong>Rapid Promotion:</strong> Advanced from contributor → Pod Lead → Calibrator → Tooling Champion within months due to quality, clarity, and judgment.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Spearheaded the integration of chain-of-thought reasoning into Llama 3.3's training data, significantly enhancing its complex problem-solving and reasoning abilities, resulting in a 200% improvement in the model's capabilities.</p>
+                                                <p><strong>QA Calibration System:</strong> Led calibration across 150+ contributors, establishing evaluation standards that directly impact model training data quality.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed and implemented dashboards using Google Looker Studio to analyze the throughput, quality, and performance of 100+ trainers working on the project.</p>
+                                                <p><strong>Tooling Infrastructure:</strong> Designed Colab → Docker → GCP Workstations pipeline, owning documentation and iteration cycles for the entire evaluation infrastructure.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Architected and implemented containerized environments using Docker, GCP, and Google Colab to streamline project deployment and ensure consistent development environments across teams.</p>
-                                            </li>
-                                            <li class="qualification__modal-work">
-                                                <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Created comprehensive technical documentation and project launch frameworks for multiple Meta initiatives, facilitating smooth project kickoffs and maintaining clear communication channels between teams.</p>
-                                            </li>
-                                            <li class="qualification__modal-work">
-                                                <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Build and evaluate capacity for additional project opportunities, focusing on orchestration and implementation strategies to expand service offerings to the client.</p>
-                                            </li>
-                                            <li class="qualification__modal-work">
-                                                <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Foster collaboration among data scientists, developers, and business analysts, driving innovative solutions for large-scale AI model training while maintaining quality standards.</p>
+                                                <p><strong>Performance Analytics:</strong> Built RMarkdown KPI dashboards tracking throughput, quality, and performance metrics for 100+ trainers.</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -1098,7 +1147,7 @@
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Data Consultant</h3>
+                                <h3 class="qualification__title">Data Science Consultant</h3>
                                 <span class="qualification__subtitle">Systems Limited</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -1107,13 +1156,12 @@
 
                                 <span
                                     class="button button--flex button--small button--link qualification__button-modal">
-                                    What I did here
+                                    View Details
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </span>
 
                                 <div class="qualification__modal">
                                     <div class="qualification__modal-content">
-                                        <!-- <h4 class="qualification__modal-title"></h4> -->
                                         <p style="text-align:center"><img src="assets/img/Experience/systems.png"
                                                 alt=""></p>
                                         <i class="uil uil-times qualification__modal-close"></i>
@@ -1121,31 +1169,23 @@
                                         <ul class="qualification__modal-works grid">
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed a web application for data ingestion using Plotly Dash and Snowpark with multiple user roles and permissions</p>
+                                                <p><strong>Production Credit Scoring:</strong> Built end-to-end credit scoring pipelines using PySpark + MLflow, deployed across AWS and Azure environments.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Established and implemented company-wide rules and standards while developing data science pipelines</p>
+                                                <p><strong>Real-Time Streaming:</strong> Designed production data engineering pipelines using Kafka, Kinesis, Glue, and Lambda for real-time analytics.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed a solution to conduct multivariate forecasting of female employees' representation in management positions by December 2025 using historical trends in promotions, turnover, and recruitments.</p>
+                                                <p><strong>ESG Platform:</strong> Delivered ESG data ingestion platform serving 50+ global business units using Plotly Dash and Snowpark.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed assets for client pitches for traditional ML use-cases including credit scoring, churn prediction etc. on AWS, Azure and Python</p>
+                                                <p><strong>Pre-Sales & Solutioning:</strong> Led RFP responses and client pitches, contributing $5M+ pipeline value through technical solutioning.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Worked on various PoC (Proof of Concepts) utilizing Generative AI including multi-agent workflows, retrieval augmented generation (RAG) models etc</p>
-                                            </li>
-                                            <li class="qualification__modal-work">
-                                                <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Established a client assessment tool using RAGs and multi-agent workflows implemented in LangGraph, Gemini and ChromaDB </p>
-                                            </li>
-                                            <li class="qualification__modal-work">
-                                                <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Created various real-time data engineering pipelines using AWS Glue, Kinesis and Athena</p>
+                                                <p><strong>GenAI Prototyping:</strong> Built RAG and multi-agent systems using LangChain, LangGraph, and Neo4j for client assessment automation.</p>
                                             </li>
                                         </ul>
 
@@ -1171,7 +1211,7 @@
                             </div>
 
                             <div>
-                                <h3 class="qualification__title">Data Scientist ll</h3>
+                                <h3 class="qualification__title">Data Scientist II</h3>
                                 <span class="qualification__subtitle">Afiniti</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -1180,13 +1220,12 @@
 
                                 <span
                                     class="button button--flex button--small button--link qualification__button-modal">
-                                    What I did here
+                                    View Details
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </span>
 
                                 <div class="qualification__modal">
                                     <div class="qualification__modal-content">
-                                        <!-- <h4 class="qualification__modal-title"></h4> -->
                                         <p style="text-align:center"><img src="assets/img/Experience/afiniti.png" alt="">
                                         </p>
                                         <i class="uil uil-times qualification__modal-close"></i>
@@ -1194,15 +1233,15 @@
                                         <ul class="qualification__modal-works grid">
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed statistical and causal models in Stan and trained them in R.</p>
+                                                <p><strong>Causal Inference:</strong> Developed statistical and causal models in Stan/CmdStan, trained and deployed in R for behavioral optimization.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Analyzed the client's environment to create innovative optimization metrics for optimal agent-caller pairings to maximize revenue.</p>
+                                                <p><strong>Optimization Metrics:</strong> Designed novel optimization metrics for agent-caller pairing that tied directly to revenue outcomes.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Trained and led multiple resources across three clients in the Iberia region.</p>
+                                                <p><strong>Regional Leadership:</strong> Led technical teams across three clients in the Iberia region, establishing best practices for model deployment.</p>
                                             </li>
                                         </ul>
 
@@ -1216,9 +1255,8 @@
                         <div class="qualification__data">
 
                             <div>
-                                <h3 class="qualification__title">Data Scientist l</h3>
-                                <span class="qualification__subtitle">Afiniti
-                                    </span>
+                                <h3 class="qualification__title">Data Scientist I</h3>
+                                <span class="qualification__subtitle">Afiniti</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     April 2021 - January 2023
@@ -1226,13 +1264,12 @@
 
                                 <span
                                     class="button button--flex button--small button--link qualification__button-modal">
-                                    What I did here
+                                    View Details
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </span>
 
                                 <div class="qualification__modal">
                                     <div class="qualification__modal-content">
-                                        <!-- <h4 class="qualification__modal-title"></h4> -->
                                         <p style="text-align:center"><img src="assets/img/Experience/afiniti.png"
                                                 alt=""></p>
                                         <i class="uil uil-times qualification__modal-close"></i>
@@ -1240,23 +1277,23 @@
                                         <ul class="qualification__modal-works grid">
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Implemented Bayesian MCMC statistical models and decision trees to optimize agent/caller interactions in call centers, increasing client revenue by over 5% across multiple accounts.</p>
+                                                <p><strong>Bayesian Decision Systems:</strong> Built Bayesian IRT & MCMC pairing models in R + CmdStan for behavioral call routing, delivering 5-10% revenue lift across global telco clients.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Developed interactive RMarkdown/R Shiny dashboards to track and visualize important KPIs for relevant stakeholders.</p>
+                                                <p><strong>Predictive Pipeline:</strong> Designed ML pipeline (LGBoost/RandomForest) predicting 60-day revenue outcomes with 93% accuracy from 1-day signals.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Spearheaded a machine learning pipeline using LGBoost/RandomForest models to predict 60-day revenue outcomes with 93% accuracy based on 1-day predictors.</p>
+                                                <p><strong>Feature Engineering:</strong> Engineered behavioral features that improved model validation by 50%+ when integrated into the modeling process.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Engineered customer features that improved model validation by over 50% when included in the modeling process.</p>
+                                                <p><strong>Stakeholder Dashboards:</strong> Built automated RMarkdown/Shiny dashboards for KPI tracking and executive reporting.</p>
                                             </li>
                                             <li class="qualification__modal-work">
                                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                                <p>Collaborated with an international team of data professionals, developers, client executives, and project managers to launch Afiniti for two new clients in the Iberia region.</p>
+                                                <p><strong>Client Launches:</strong> Led technical delivery for two new client launches in Iberia region alongside international teams.</p>
                                             </li>
                                         </ul>
 
@@ -1383,6 +1420,46 @@
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
 
+                    <!--==================== MARKOV CHAIN FINANCE ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/Portfolio/portfolio4.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Markov Chain Finance</h3>
+                            <h4 class="portfolio__subtitle">Founder — Decision Intelligence Platform</h4>
+
+                            <li class="qualification__modal-work portfolio__description">
+                                <i class="uil uil-check-circle qualification__modal-icon"></i>
+                                <p>Building tools that reframe financial decisions inside historical and behavioral context — decision support over prediction</p>
+                            </li>
+
+                            <li class="qualification__modal-work portfolio__description">
+                                <i class="uil uil-check-circle qualification__modal-icon"></i>
+                                <p>Volatility regime modeling, spectral analysis, Bayesian changepoint detection for probabilistic portfolio analytics</p>
+                            </li>
+
+                            <li class="qualification__modal-work portfolio__description">
+                                <i class="uil uil-check-circle qualification__modal-icon"></i>
+                                <p>Philosophy: Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen</p>
+                            </li>
+
+                            <h4 class="portfolio__subtitle">Tech Stack</h4>
+
+                            <div class="portfolio_tech_icons">
+                                <img src="assets/img/Tech/python.png">
+                                <img src="assets/img/Tech/pymc.png">
+                                <img src="assets/img/Tech/plotly.png">
+                                <img src="assets/img/Tech/streamlit.png">
+                            </div><br>
+
+                            <a href="https://github.com/sheharyarakhtar"
+                                class="button button--flex button--small portfolio__button">
+                                Coming Soon
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
                     <!--==================== PORTFOLIO 1====================-->
                     <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/Portfolio/portfolio8.jpg" alt="" class="portfolio__img">
@@ -1402,7 +1479,7 @@
                             </li>
                             <li class="qualification__modal-work portfolio__description">
                                 <i class="uil uil-check-circle qualification__modal-icon"></i>
-                                <p>Orchestrated a crew of agents using <a href=https://wblob:https://web.whatsapp.com/2322d8d3-967a-4932-934e-f929988b76f9ww.crewai.com/>CrewAI</a> which would distribute responsibilites as understanding the clients' needs, extracting use-cases, curating solutions based on various cloud infrastructure by using custom RAGs with cloud's services documentation as context</p>
+                                <p>Orchestrated a crew of agents using <a href="https://www.crewai.com/">CrewAI</a> which would distribute responsibilities such as understanding the clients' needs, extracting use-cases, and curating solutions based on various cloud infrastructure by using custom RAGs with cloud's services documentation as context</p>
                             </li>
 
                             <h4 class="portfolio__subtitle">Tech Stack</h4>
@@ -1596,7 +1673,7 @@
         <!--==================== RESEARCH PAPERS ====================-->
         <section class="research section" id="research">
             <h2 class="section__title">Research</h2>
-            <span class="section__subtitle">My Publications</span>
+            <span class="section__subtitle">Published Work</span>
 
             <!-- <div class="research__container container grid"> -->
                 <!--==================== PAPER 1====================-->
@@ -1620,19 +1697,19 @@
 
                 <!--==================== BLOG ====================-->
         <section class="blog section" id="blog">
-            <h2 class="section__title">Blog</h2>
-            <span class="section__subtitle">My Technical Articles </span>
+            <h2 class="section__title">Writing</h2>
+            <span class="section__subtitle">Technical Thinking in Public</span>
 
             <div class="blog__container container swiper-container">
                 <div class="swiper-wrapper">
                     <!--==================== BLOG 4====================-->
                     <div class="blog__content grid swiper-slide">
-                        <img src="assets/img/Blog/rag2-article.jpeg" alt="" class="blog__img"> <!-- Replace with an appropriate image -->
+                        <img src="assets/img/Blog/rag-article.jpeg" alt="" class="blog__img"> <!-- Replace with an appropriate image -->
 
                         <div class="blog__data">
                             <h3 class="blog__title">Building Smart Chatbots with Retrieval Augmented Generation (RAG): An Open-Source Guide</h3>
                             <p class="blog__description">
-                                In this article, I guide you through creating a RAG system from scratch and developing a chatbot that uses this RAG to answer user questions. It utilizes open-source technologies to develope production level chatbots.
+                                In this article, I guide you through creating a RAG system from scratch and developing a chatbot that uses this RAG to answer user questions. It utilizes open-source technologies to develop production-level chatbots.
                             </p>
 
                             <a href="https://www.linkedin.com/pulse/retrieval-augmented-generation-rags-sheharyar-akhtar-qfs4f/" class="button button--flex button--small portfolio__button"> <!-- Replace with the article link -->
@@ -1864,43 +1941,95 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Let's Connect</h2>
+            <span class="section__subtitle">Open to Opportunities & Collaboration</span>
 
-            <div class="contact__container container grid">
-                <div>
+            <div class="contact__wrapper container">
+                <div class="contact__info-grid">
                     <div class="contact__information">
                         <i class="uil uil-phone contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title">Call Me</h3>
                             <span class="contact__subtitle">+92 301 5388946</span>
                         </div>
                     </div>
-                </div>
 
-                <div>
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
-
                         <div>
-                            <a href="mailto: kunjcmehta@gmail.com">
+                            <a href="mailto:sheharyar7146@gmail.com">
                                 <h3 class="contact__title">Email</h3>
                             </a>
-                            <a href="mailto: kunjcmehta@gmail.com"><span
-                                    class="contact__subtitle">sheharyar7146@gmail.com</span></a>
+                            <a href="mailto:sheharyar7146@gmail.com">
+                                <span class="contact__subtitle">sheharyar7146@gmail.com</span>
+                            </a>
                         </div>
                     </div>
-                </div>
 
-                <div>
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title">Location</h3>
                             <span class="contact__subtitle">Lahore, Pakistan</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-container">
+                    <h3 class="contact__form-title">Send me a message</h3>
+                    <form 
+                        class="contact__form"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSd3TTneo8USmLhFHL4Z_DLnCMQP7i3rKNO9ZxCQ0CNuxVcdEQ/formResponse"
+                        method="POST"
+                        target="hidden_iframe"
+                        onsubmit="submittedForm=true;">
+                        
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="name">Name</label>
+                            <input 
+                                type="text" 
+                                id="name"
+                                name="entry.2005620554" 
+                                class="contact__form-input" 
+                                placeholder="Your name"
+                                required>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="email">Email</label>
+                            <input 
+                                type="email" 
+                                id="email"
+                                name="entry.1045781291" 
+                                class="contact__form-input" 
+                                placeholder="your.email@example.com"
+                                required>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="message">Message</label>
+                            <textarea 
+                                id="message"
+                                name="entry.839337160" 
+                                class="contact__form-input contact__form-textarea" 
+                                placeholder="Write your message here..."
+                                rows="5"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact__form-button button">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </form>
+
+                    <!-- Hidden iframe for form submission -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    
+                    <!-- Success message -->
+                    <div class="contact__form-success" id="form-success">
+                        <i class="uil uil-check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully.</p>
                     </div>
                 </div>
             </div>
@@ -1954,7 +2083,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; 2024 Sheharyar Akhtar. All rights reserved</p>
+            <p class="footer__copy">&#169; 2026 Sheharyar Akhtar. All rights reserved</p>
         </div>
     </footer>
 
