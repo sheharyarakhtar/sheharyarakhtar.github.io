@@ -471,8 +471,8 @@ img {
 
 /*==================== DIAGRAMS ====================*/
 .project__diagram {
-    margin: 1.5rem 0;
-    padding: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
     background: var(--bg-primary);
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -481,7 +481,8 @@ img {
 
 .architecture-diagram {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
+    min-height: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -490,12 +491,12 @@ img {
 .diagram-node {
     fill: var(--bg-card);
     stroke: var(--border);
-    stroke-width: 1;
+    stroke-width: 1.5;
 }
 
 .diagram-node-highlight {
-    fill: var(--bg-card);
-    stroke: var(--accent-dim);
+    fill: rgba(106, 138, 253, 0.1);
+    stroke: var(--accent);
     stroke-width: 2;
 }
 
@@ -508,7 +509,8 @@ img {
 .diagram-text {
     fill: var(--text-primary);
     font-family: var(--font-body);
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: 500;
     text-anchor: middle;
     dominant-baseline: middle;
 }
@@ -516,22 +518,36 @@ img {
 .diagram-text-small {
     fill: var(--text-muted);
     font-family: var(--font-mono);
-    font-size: 9px;
+    font-size: 10px;
     text-anchor: middle;
     dominant-baseline: middle;
 }
 
 .diagram-arrow {
     stroke: var(--text-muted);
-    stroke-width: 1.5;
+    stroke-width: 2;
     fill: none;
 }
 
 .diagram-arrow-dashed {
     stroke: var(--accent-dim);
-    stroke-width: 1;
-    stroke-dasharray: 4 2;
+    stroke-width: 1.5;
+    stroke-dasharray: 5 3;
     fill: none;
+}
+
+@media screen and (max-width: 768px) {
+    .project__diagram {
+        padding: 1rem;
+        margin: 1.5rem -1rem;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .architecture-diagram {
+        min-height: 120px;
+    }
 }
 
 /*==================== MCF ====================*/

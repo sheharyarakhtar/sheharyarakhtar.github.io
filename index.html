@@ -7,15 +7,15 @@
     <meta name="description" content="Building decision-first systems for uncertain environments. LLM Evaluation, Bayesian Modeling, Quantitative Market Research.">
     <meta name="keywords" content="LLM Evaluation, Bayesian Modeling, Quantitative Finance, Decision Systems, Data Science">
     <meta name="author" content="Sheharyar Akhtar">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Sheharyar Akhtar — Applied AI & Quantitative Systems">
     <meta property="og:description" content="Building decision-first systems for uncertain environments.">
     <meta property="og:type" content="website">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="assets/img/memoji.jpg" type="image/jpg">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav__toggle" id="nav-toggle">
+                <div class="nav__toggle" id="nav-toggle">
                 <i class="uil uil-bars"></i>
             </div>
         </nav>
@@ -71,22 +71,22 @@
                     My work spans LLM evaluation at scale (Meta LLaMA), Bayesian behavioral modeling, and quantitative market research.
                     Currently: leading reasoning evaluation at Turing, building <a href="#mcf" class="hero__link">Markov Chain Finance</a>.
                 </p>
-                
+
                 <div class="hero__links">
                     <a href="https://github.com/sheharyarakhtar" target="_blank" class="hero__link-item">
                         <i class="uil uil-github-alt"></i> GitHub
                     </a>
                     <a href="https://www.linkedin.com/in/sheharyarakhtar/" target="_blank" class="hero__link-item">
                         <i class="uil uil-linkedin-alt"></i> LinkedIn
-                    </a>
+                        </a>
                     <a href="mailto:sheharyar7146@gmail.com" class="hero__link-item">
                         <i class="uil uil-envelope"></i> Email
                     </a>
                     <a href="assets/pdf/Resume_Sheharyar_Akhtar.pdf" target="_blank" class="hero__link-item">
                         <i class="uil uil-file-alt"></i> CV
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <!-- ==================== HOW I THINK ==================== -->
@@ -116,7 +116,7 @@
                         <p>If your tool doesn't change a decision, it's a dashboard. I build systems that force better choices under uncertainty.</p>
                     </li>
                 </ul>
-            </div>
+                            </div>
         </section>
 
         <!-- ==================== WHAT I WORK ON ==================== -->
@@ -136,8 +136,8 @@
                             <span class="artifact__label">Artifact:</span> 
                             Colab → Docker → GCP Workstations evaluation pipeline
                         </p>
-                    </div>
-                    
+                            </div>
+
                     <div class="work__card">
                         <h3 class="work__card-title">Bayesian & Statistical Modeling</h3>
                         <ul class="work__card-list">
@@ -149,8 +149,8 @@
                             <span class="artifact__label">Artifact:</span> 
                             Bayesian agent pairing optimization, volatility regime models
                         </p>
-                    </div>
-                    
+                            </div>
+
                     <div class="work__card">
                         <h3 class="work__card-title">Data & MLOps Systems</h3>
                         <ul class="work__card-list">
@@ -162,8 +162,8 @@
                             <span class="artifact__label">Artifact:</span> 
                             PySpark + MLflow credit scoring system, Kafka pipelines
                         </p>
-                    </div>
-                    
+                            </div>
+
                     <div class="work__card">
                         <h3 class="work__card-title">Quantitative Market Research</h3>
                         <ul class="work__card-list">
@@ -175,9 +175,9 @@
                             <span class="artifact__label">Artifact:</span> 
                             Markov Chain Finance research notebooks & dashboards
                         </p>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                                </div>
+                            </div>
         </section>
 
         <!-- ==================== SELECTED WORK ==================== -->
@@ -185,14 +185,14 @@
             <div class="projects__container container">
                 <h2 class="section__title">Selected Work</h2>
                 <p class="projects__intro">Click to expand each case study</p>
-                
+
                 <!-- Project 1: LLM Evaluation -->
                 <article class="project project--collapsed" data-project="1">
                     <div class="project__header">
                         <div class="project__header-content">
-                            <h3 class="project__title">LLM Reasoning Evaluation Infrastructure</h3>
-                            <span class="project__context">Turing · Meta LLaMA · 2024–Present</span>
-                            <p class="project__summary">Built evaluation and calibration systems for 150+ contributors shaping LLaMA training data quality</p>
+                            <h3 class="project__title">LLM Evaluation & Agentic Tooling</h3>
+                            <span class="project__context">Turing · Meta & Apple · 2024–Present</span>
+                            <p class="project__summary">Pod Lead → Calibrator → Tooling Champion for SWE-bench annotation and automated quality assessment</p>
                         </div>
                         <span class="project__toggle">+</span>
                     </div>
@@ -200,64 +200,63 @@
                     <div class="project__body">
                         <div class="project__section">
                             <h4>Problem</h4>
-                            <p>Meta needed to evaluate reasoning quality in LLaMA models for software engineering tasks—specifically, whether the model's issue-to-patch reasoning trajectories were sound. At our scale (150+ human contributors), small inconsistencies in judgment compounded into noisy training signals.</p>
+                            <p>Meta needed to improve LLaMA's performance on the SWE-bench benchmark through human annotations. Contributors would "think on behalf of the model"—navigating repositories to trace from a GitHub issue to the patch that resolves it. At 150+ contributors, annotation quality variance directly impacted benchmark scores.</p>
                         </div>
                         
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
-                            <p>Human evaluators interpret "good reasoning" differently. At scale, this variance destroys signal. The feedback loop was opaque—we couldn't easily trace whether calibration improvements actually improved downstream model behavior.</p>
+                            <p>Reasoning through codebases is subjective—what counts as "good" navigation? Pod leads interpreted quality differently. Calibrating 150+ people to consistent standards while maintaining throughput required systems, not just guidelines. Later, scaling to agentic workflows (Agentless SWE-bench) meant building infrastructure that didn't exist.</p>
                         </div>
                         
                         <div class="project__diagram">
-                            <svg viewBox="0 0 700 140" class="architecture-diagram">
-                                <rect x="10" y="50" width="90" height="40" rx="4" class="diagram-node"/>
-                                <text x="55" y="75" class="diagram-text">Raw Tasks</text>
+                            <svg viewBox="0 0 800 180" class="architecture-diagram">
+                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="60" y="100" class="diagram-text">GitHub Issues</text>
                                 
-                                <rect x="130" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="180" y="75" class="diagram-text">150+ Contributors</text>
+                                <rect x="140" y="70" width="120" height="50" rx="5" class="diagram-node"/>
+                                <text x="200" y="95" class="diagram-text">150+ Annotators</text>
+                                <text x="200" y="110" class="diagram-text-small">(reasoning traces)</text>
                                 
-                                <rect x="260" y="50" width="90" height="40" rx="4" class="diagram-node-highlight"/>
-                                <text x="305" y="75" class="diagram-text">Calibration</text>
+                                <rect x="290" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
+                                <text x="340" y="95" class="diagram-text">Pod Lead QA</text>
+                                <text x="340" y="110" class="diagram-text-small">(my team of 5)</text>
                                 
-                                <rect x="380" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="430" y="75" class="diagram-text">Quality Metrics</text>
+                                <rect x="420" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
+                                <text x="470" y="95" class="diagram-text">Calibration</text>
+                                <text x="470" y="110" class="diagram-text-small">(cross-pod)</text>
                                 
-                                <rect x="510" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="560" y="75" class="diagram-text">LLM Training</text>
+                                <rect x="550" y="70" width="110" height="50" rx="5" class="diagram-node"/>
+                                <text x="605" y="100" class="diagram-text">SWE-bench Score</text>
                                 
-                                <rect x="180" y="110" width="120" height="25" rx="4" class="diagram-node-secondary"/>
-                                <text x="240" y="127" class="diagram-text-small">Colab/Docker/GCP</text>
+                                <rect x="290" y="150" width="230" height="30" rx="5" class="diagram-node-secondary"/>
+                                <text x="405" y="170" class="diagram-text-small">Tooling: Colab / GCP / Kubernetes (Agentless)</text>
                                 
-                                <rect x="380" y="110" width="100" height="25" rx="4" class="diagram-node-secondary"/>
-                                <text x="430" y="127" class="diagram-text-small">KPI Dashboards</text>
-                                
-                                <path d="M100 70 L130 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M230 70 L260 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M480 70 L510 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M240 90 L240 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                                <path d="M430 90 L430 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M260 95 L290 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M390 95 L420 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M520 95 L550 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M405 120 L405 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
                             </svg>
                         </div>
                         
                         <div class="project__section">
-                            <h4>Approach</h4>
+                            <h4>My Roles (Progressive)</h4>
                             <ul>
-                                <li><strong>Evaluation Framework:</strong> Issue-to-patch reasoning trajectory rubrics</li>
-                                <li><strong>Calibration at Scale:</strong> 150+ contributors with clear rubrics and inter-rater reliability tracking</li>
-                                <li><strong>Infrastructure:</strong> Colab → Docker → GCP Workstations pipeline</li>
-                                <li><strong>Analytics:</strong> RMarkdown dashboards for 100+ trainers</li>
+                                <li><strong>Pod Lead:</strong> Managed team of 5 annotators—onboarding, training, daily QA reviews, performance tracking</li>
+                                <li><strong>Calibrator:</strong> Reviewed other pod leads' evaluations to ensure cross-team consistency</li>
+                                <li><strong>Tooling Champion:</strong> Built infrastructure for new Meta projects—Agentless SWE-bench approach, Colab/GCP/Kubernetes systems for agentic annotation workflows</li>
+                                <li><strong>Apple (Current):</strong> Autoreviewer team—defining quality dimensions for tasks, prompting QA agents to automatically score annotations</li>
                             </ul>
                         </div>
                         
                         <div class="project__section">
                             <h4>Impact</h4>
-                            <p>Evaluation standards directly shaped training data quality for Meta's LLaMA models. Promoted contributor → Pod Lead → Calibrator → Tooling Champion in under 4 months.</p>
+                            <p>Annotation quality directly shaped Meta's SWE-bench performance. Promoted through 4 roles in under 5 months based on judgment and systems thinking. Now designing automated evaluation pipelines at Apple.</p>
                         </div>
                         
                         <div class="project__section project__section--reflection">
                             <h4>What I'd Do Differently</h4>
-                            <p>Earlier investment in automated consistency checks. A simple embedding-based similarity check on evaluator rationales would have surfaced drift weeks earlier.</p>
+                            <p>Build calibration tooling earlier. We relied on manual cross-checks too long—an embedding-based similarity check on reasoning traces would have surfaced drift faster.</p>
                         </div>
                     </div>
                 </article>
@@ -266,9 +265,9 @@
                 <article class="project project--collapsed" data-project="2">
                     <div class="project__header">
                         <div class="project__header-content">
-                            <h3 class="project__title">Bayesian Agent-Customer Pairing Optimization</h3>
+                            <h3 class="project__title">Agent-Caller Pairing Optimization</h3>
                             <span class="project__context">Afiniti · 2021–2023</span>
-                            <p class="project__summary">Bayesian models delivering 5-10% revenue lift through optimized call routing</p>
+                            <p class="project__summary">Item Response Theory + diagonal allocation delivering 5-10% revenue lift at sub-100ms latency</p>
                         </div>
                         <span class="project__toggle">+</span>
                     </div>
@@ -276,65 +275,71 @@
                     <div class="project__body">
                         <div class="project__section">
                             <h4>Problem</h4>
-                            <p>Call center routing decisions happen in milliseconds but have measurable revenue impact. The pairing effect is confounded by agent skill, customer intent, and time-of-day effects. Traditional A/B testing couldn't isolate the true causal uplift.</p>
+                            <p>Call center routing happens in milliseconds but determines revenue outcomes. The question: which agent should take which caller to maximize conversion? Random routing leaves money on the table. But the "best" pairing depends on latent properties of both agents and callers that you can't directly observe.</p>
                         </div>
                         
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
-                            <p>We needed to separate agent baseline skill, customer propensity, and interaction effect. The signal was buried in noise—thousands of calls per day, but pairing effect might only be a few percentage points. Production latency constraints (sub-100ms) meant complex models weren't viable.</p>
+                            <p>Agent skill and caller intent are latent—you only see outcomes. A sale might happen because the agent is great, the caller was easy, or the pairing worked. Disentangling these effects requires careful statistical modeling. And the model has to run in production at sub-100ms latency for real-time routing decisions.</p>
                         </div>
                         
                         <div class="project__diagram">
-                            <svg viewBox="0 0 700 140" class="architecture-diagram">
-                                <rect x="10" y="50" width="90" height="40" rx="4" class="diagram-node"/>
-                                <text x="55" y="75" class="diagram-text">Incoming Call</text>
+                            <svg viewBox="0 0 800 180" class="architecture-diagram">
+                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="60" y="100" class="diagram-text">Incoming Call</text>
                                 
-                                <rect x="130" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="180" y="75" class="diagram-text">Feature Extract</text>
+                                <rect x="140" y="70" width="120" height="50" rx="5" class="diagram-node"/>
+                                <text x="200" y="95" class="diagram-text">Caller Features</text>
+                                <text x="200" y="110" class="diagram-text-small">(real-time)</text>
                                 
-                                <rect x="260" y="50" width="110" height="40" rx="4" class="diagram-node-highlight"/>
-                                <text x="315" y="70" class="diagram-text">Bayesian IRT</text>
-                                <text x="315" y="85" class="diagram-text-small">(Stan/CmdStan)</text>
+                                <rect x="290" y="70" width="120" height="50" rx="5" class="diagram-node-highlight"/>
+                                <text x="350" y="95" class="diagram-text">IRT Model</text>
+                                <text x="350" y="110" class="diagram-text-small">(Stan)</text>
                                 
-                                <rect x="400" y="50" width="90" height="40" rx="4" class="diagram-node"/>
-                                <text x="445" y="75" class="diagram-text">Route Call</text>
+                                <rect x="440" y="70" width="130" height="50" rx="5" class="diagram-node-highlight"/>
+                                <text x="505" y="95" class="diagram-text">Diagonal Alloc.</text>
+                                <text x="505" y="110" class="diagram-text-small">(high-rev → best agent)</text>
                                 
-                                <rect x="520" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="570" y="75" class="diagram-text">Revenue Signal</text>
+                                <rect x="600" y="70" width="110" height="50" rx="5" class="diagram-node"/>
+                                <text x="655" y="100" class="diagram-text">Revenue Uplift</text>
                                 
-                                <rect x="320" y="110" width="120" height="25" rx="4" class="diagram-node-secondary"/>
-                                <text x="380" y="127" class="diagram-text-small">A/B Holdout Testing</text>
+                                <rect x="140" y="150" width="130" height="30" rx="5" class="diagram-node-secondary"/>
+                                <text x="205" y="170" class="diagram-text-small">Caller Groups (Decision Trees)</text>
                                 
-                                <path d="M100 70 L130 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M230 70 L260 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M370 70 L400 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M490 70 L520 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M380 90 L380 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                                <rect x="440" y="150" width="130" height="30" rx="5" class="diagram-node-secondary"/>
+                                <text x="505" y="170" class="diagram-text-small">A/B Holdout Validation</text>
+                                
+                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M260 95 L290 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M410 95 L440 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M570 95 L600 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M200 120 L200 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                                <path d="M505 120 L505 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
                             </svg>
                         </div>
                         
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
-                                <li><strong>Behavioral Features:</strong> Call metadata features that improved validation by 50%+</li>
-                                <li><strong>Bayesian IRT Models:</strong> R + CmdStan for agent-customer compatibility</li>
-                                <li><strong>Predictive Pipeline:</strong> 93% accuracy predicting 60-day outcomes from 1-day signals</li>
-                                <li><strong>Causal Framework:</strong> Proper holdout groups for true uplift measurement</li>
+                                <li><strong>Item Response Theory:</strong> Estimated latent agent performance and caller propensity using Bayesian IRT models in Stan—agents and callers as "items" and "respondents"</li>
+                                <li><strong>Diagonal Allocation:</strong> At runtime, high-expected-revenue callers routed to best-performing agents, low-expected to average—optimal matching under constraints</li>
+                                <li><strong>Caller Segmentation:</strong> Built caller groups using decision trees; determined split metrics via discriminant analysis to maximize between-group variance</li>
+                                <li><strong>Feature Engineering:</strong> Engineered real-time features to predict purchase likelihood at call arrival—improved model validation 50%+</li>
                             </ul>
                         </div>
                         
                         <div class="project__section">
                             <h4>Impact</h4>
-                            <p><strong>5-10% revenue lift</strong> across global telco clients. Led 3 client launches in Iberia region. Promoted DS I → DS II based on impact.</p>
+                            <p><strong>5-10% revenue lift</strong> across global telco clients. Led 3 client launches in Iberia region. Promoted DS I → DS II. The diagonal allocation framework became the standard approach for new client deployments.</p>
                         </div>
                         
                         <div class="project__section project__section--reflection">
                             <h4>What I'd Do Differently</h4>
-                            <p>More aggressive feature selection earlier. We included ~40 signals; maybe 12 actually mattered.</p>
+                            <p>Simpler caller segmentation first. We over-engineered the decision tree splits before confirming that finer segmentation actually improved allocation. Often 3-5 groups were enough.</p>
                         </div>
                     </div>
                 </article>
-                
+
                 <!-- Project 3: Credit Scoring -->
                 <article class="project project--collapsed" data-project="3">
                     <div class="project__header">
@@ -342,55 +347,56 @@
                             <h3 class="project__title">Production Credit Scoring & ESG Platform</h3>
                             <span class="project__context">Systems Limited · 2023–2024</span>
                             <p class="project__summary">ML platform serving 50+ global business units with $5M+ pipeline contribution</p>
-                        </div>
+                                </div>
                         <span class="project__toggle">+</span>
-                    </div>
-                    
+                            </div>
+
                     <div class="project__body">
                         <div class="project__section">
                             <h4>Problem</h4>
                             <p>Banking clients needed credit scoring with regulatory explainability. A multinational needed ESG scoring across 50+ global business units with inconsistent data quality. Both required systems non-technical stakeholders could trust and regulators could audit.</p>
-                        </div>
-                        
+                            </div>
+
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
                             <p>Regulatory explainability conflicts with model complexity. Data pipelines needed both batch and real-time scoring across AWS and Azure. 50+ business units submitting data in different formats, currencies, reporting standards.</p>
-                        </div>
-                        
+                            </div>
+
                         <div class="project__diagram">
-                            <svg viewBox="0 0 700 140" class="architecture-diagram">
-                                <rect x="10" y="50" width="80" height="40" rx="4" class="diagram-node"/>
-                                <text x="50" y="75" class="diagram-text">Raw Data</text>
+                            <svg viewBox="0 0 800 180" class="architecture-diagram">
+                                <text x="400" y="20" class="diagram-text-small" style="fill: var(--text-muted)">AWS + Azure</text>
                                 
-                                <rect x="120" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="170" y="75" class="diagram-text">PySpark ETL</text>
+                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="60" y="100" class="diagram-text">Raw Data</text>
                                 
-                                <rect x="250" y="50" width="100" height="40" rx="4" class="diagram-node"/>
-                                <text x="300" y="75" class="diagram-text">Feature Store</text>
+                                <rect x="140" y="70" width="110" height="50" rx="5" class="diagram-node"/>
+                                <text x="195" y="100" class="diagram-text">PySpark ETL</text>
                                 
-                                <rect x="380" y="50" width="90" height="40" rx="4" class="diagram-node-highlight"/>
-                                <text x="425" y="75" class="diagram-text">MLflow</text>
+                                <rect x="280" y="70" width="110" height="50" rx="5" class="diagram-node"/>
+                                <text x="335" y="100" class="diagram-text">Feature Store</text>
                                 
-                                <rect x="500" y="50" width="80" height="40" rx="4" class="diagram-node"/>
-                                <text x="540" y="75" class="diagram-text">Scoring API</text>
+                                <rect x="420" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
+                                <text x="470" y="100" class="diagram-text">MLflow</text>
                                 
-                                <rect x="610" y="50" width="70" height="40" rx="4" class="diagram-node"/>
-                                <text x="645" y="75" class="diagram-text">SHAP</text>
+                                <rect x="550" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="600" y="100" class="diagram-text">Scoring API</text>
                                 
-                                <rect x="380" y="110" width="90" height="25" rx="4" class="diagram-node-secondary"/>
-                                <text x="425" y="127" class="diagram-text-small">Drift Monitor</text>
+                                <rect x="680" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="730" y="95" class="diagram-text">SHAP</text>
+                                <text x="730" y="110" class="diagram-text-small">(explainability)</text>
                                 
-                                <text x="350" y="15" class="diagram-text-small" style="fill: var(--text-muted)">AWS + Azure</text>
+                                <rect x="420" y="150" width="100" height="30" rx="5" class="diagram-node-secondary"/>
+                                <text x="470" y="170" class="diagram-text-small">Drift Monitor</text>
                                 
-                                <path d="M90 70 L120 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M220 70 L250 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M470 70 L500 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M580 70 L610 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M425 90 L425 110" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
+                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M250 95 L280 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M390 95 L420 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M520 95 L550 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M650 95 L680 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M470 120 L470 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
                             </svg>
                         </div>
-                        
+
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
@@ -399,20 +405,20 @@
                                 <li><strong>ESG Framework:</strong> Standardized ingestion for 50+ BUs with uncertainty quantification</li>
                                 <li><strong>Pre-Sales:</strong> RFP responses contributing $5M+ pipeline value</li>
                             </ul>
-                        </div>
-                        
+                            </div>
+
                         <div class="project__section">
                             <h4>Impact</h4>
                             <p>Platform serves multiple banking clients. ESG framework deployed across <strong>50+ global business units</strong>. Reduced deployment time from weeks to days. <strong>$5M+ pipeline</strong> contribution.</p>
                         </div>
-                        
+
                         <div class="project__section project__section--reflection">
                             <h4>What I'd Do Differently</h4>
                             <p>Document regulatory requirements exhaustively upfront. Late-stage compliance questions caused rework.</p>
-                        </div>
-                    </div>
+                            </div>
+                                </div>
                 </article>
-                
+
                 <!-- Project 4: Volatility Regimes -->
                 <article class="project project--collapsed" data-project="4">
                     <div class="project__header">
@@ -420,54 +426,54 @@
                             <h3 class="project__title">Volatility Regime Detection & Market Structure</h3>
                             <span class="project__context">Markov Chain Finance · Ongoing</span>
                             <p class="project__summary">Research framework: context over prediction using HMMs, FFT, and Bayesian changepoint detection</p>
-                        </div>
+                                </div>
                         <span class="project__toggle">+</span>
-                    </div>
-                    
+                            </div>
+
                     <div class="project__body">
                         <div class="project__section">
                             <h4>Problem</h4>
                             <p>Most trading tools answer "what happened?" I wanted to answer "what environment are we in?" Traders mis-time volatility positions not because they lack information, but because they lack context.</p>
-                        </div>
-                        
+                            </div>
+
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
                             <p>Regimes are latent—you can only infer them. Hindsight bias makes historical analysis misleading. The real challenge: distinguish volatility levels from regime transitions. High volatility in a stable regime is different from medium volatility during a transition.</p>
                         </div>
-                        
+
                         <div class="project__diagram">
-                            <svg viewBox="0 0 700 140" class="architecture-diagram">
-                                <rect x="10" y="50" width="80" height="40" rx="4" class="diagram-node"/>
-                                <text x="50" y="75" class="diagram-text">Price Data</text>
+                            <svg viewBox="0 0 800 180" class="architecture-diagram">
+                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
+                                <text x="60" y="100" class="diagram-text">Price Data</text>
                                 
-                                <rect x="120" y="30" width="90" height="35" rx="4" class="diagram-node"/>
-                                <text x="165" y="52" class="diagram-text">Realized Vol</text>
+                                <rect x="150" y="40" width="110" height="45" rx="5" class="diagram-node"/>
+                                <text x="205" y="67" class="diagram-text">Realized Vol</text>
                                 
-                                <rect x="120" y="75" width="90" height="35" rx="4" class="diagram-node"/>
-                                <text x="165" y="97" class="diagram-text">FFT/Spectral</text>
+                                <rect x="150" y="105" width="110" height="45" rx="5" class="diagram-node"/>
+                                <text x="205" y="132" class="diagram-text">FFT/Spectral</text>
                                 
-                                <rect x="240" y="45" width="110" height="50" rx="4" class="diagram-node-highlight"/>
-                                <text x="295" y="70" class="diagram-text">Hidden Markov</text>
-                                <text x="295" y="85" class="diagram-text-small">Model</text>
+                                <rect x="300" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
+                                <text x="365" y="85" class="diagram-text">Hidden Markov</text>
+                                <text x="365" y="102" class="diagram-text-small">Model (PyMC)</text>
                                 
-                                <rect x="380" y="45" width="100" height="50" rx="4" class="diagram-node"/>
-                                <text x="430" y="70" class="diagram-text">Regime State</text>
-                                <text x="430" y="85" class="diagram-text-small">+ Uncertainty</text>
+                                <rect x="470" y="55" width="120" height="60" rx="5" class="diagram-node"/>
+                                <text x="530" y="82" class="diagram-text">Regime State</text>
+                                <text x="530" y="100" class="diagram-text-small">P(state) + uncertainty</text>
                                 
-                                <rect x="510" y="45" width="110" height="50" rx="4" class="diagram-node"/>
-                                <text x="565" y="65" class="diagram-text">Historical</text>
-                                <text x="565" y="80" class="diagram-text">Context</text>
-                                <text x="565" y="95" class="diagram-text-small">(not prediction)</text>
+                                <rect x="630" y="55" width="140" height="60" rx="5" class="diagram-node"/>
+                                <text x="700" y="78" class="diagram-text">Historical Context</text>
+                                <text x="700" y="95" class="diagram-text-small">"last 5 times this</text>
+                                <text x="700" y="108" class="diagram-text-small">happened..."</text>
                                 
-                                <path d="M90 60 L120 48" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M90 80 L120 93" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M210 48 L240 60" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M210 93 L240 80" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M350 70 L380 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M480 70 L510 70" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M110 80 L150 62" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M110 110 L150 128" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M260 62 L300 75" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M260 128 L300 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M430 85 L470 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M590 85 L630 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
                             </svg>
                         </div>
-                        
+
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
@@ -475,21 +481,21 @@
                                 <li><strong>Spectral Analysis:</strong> FFT-based identification of cyclical patterns</li>
                                 <li><strong>Bayesian Changepoint:</strong> PyMC models for structural breaks</li>
                                 <li><strong>Context Framing:</strong> "Last 5 times we had this structure" tools</li>
-                            </ul>
+                                        </ul>
                         </div>
-                        
+
                         <div class="project__section">
                             <h4>Output</h4>
                             <p>Research framework that reframes analysis: instead of "what will happen?" → "what environment are we in?" Building toward public tools through MCF.</p>
-                        </div>
-                        
+                                </div>
+
                         <div class="project__section project__section--reflection">
                             <h4>What I'd Do Differently</h4>
                             <p>Start simpler. I built complex multi-state HMMs before checking if a 2-state model added decision value. It often didn't.</p>
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
                 </article>
-            </div>
+                            </div>
         </section>
 
         <!-- ==================== MARKOV CHAIN FINANCE ==================== -->
@@ -501,7 +507,7 @@
                 <blockquote class="mcf__philosophy">
                     "Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen."
                 </blockquote>
-                
+
                 <p class="mcf__description">
                     MCF explores how markets behave across regimes rather than predicting prices.
                     I build probabilistic models and decision tools that frame risk, volatility, and uncertainty in historical context.
@@ -515,9 +521,9 @@
                         <li><strong>Volatility Structure:</strong> Surface analysis, term structure dynamics, and the difference between volatility levels vs. regime transitions</li>
                         <li><strong>Spectral Analysis:</strong> FFT-based identification of cyclical patterns—separating structural cycles from noise</li>
                         <li><strong>Behavioral Context:</strong> Historical analog tools that surface "the last N times we had this structure"—context over prediction</li>
-                    </ul>
-                </div>
-                
+                                        </ul>
+                        </div>
+
                 <div class="mcf__building">
                     <h3>Current Work</h3>
                     <ul>
@@ -525,19 +531,19 @@
                         <li>Historical context API for current market conditions</li>
                         <li>Bayesian changepoint detection for structural breaks</li>
                         <li>Research notes on market structure, decision-making, and uncertainty framing</li>
-                    </ul>
-                </div>
-                
+                                        </ul>
+                            </div>
+
                 <div class="mcf__stack">
                     <h3>Stack</h3>
                     <p>Python · PyMC · NumPy · Pandas · Plotly · Streamlit · HMMs · FFT · Bayesian Inference</p>
-                </div>
-                
+                            </div>
+
                 <div class="mcf__links">
                     <a href="https://github.com/sheharyarakhtar" target="_blank" class="mcf__link">
                         <i class="uil uil-github-alt"></i> Research Notebooks
                     </a>
-                </div>
+            </div>
             </div>
         </section>
 
@@ -545,7 +551,7 @@
         <section class="notes section" id="notes">
             <div class="notes__container container">
                 <h2 class="section__title">Writing</h2>
-                
+
                 <div class="notes__grid">
                     <a href="https://towardsdatascience.com/basics-of-markov-chain-monte-carlo-algorithms-a53a6b3a763d" target="_blank" class="note">
                         <h3 class="note__title">Basics of Markov Chain Monte Carlo</h3>
@@ -553,21 +559,21 @@
                         <span class="note__meta">Towards Data Science</span>
                         <span class="note__read">Read →</span>
                     </a>
-                    
+
                     <a href="https://towardsdatascience.com/determining-the-importance-of-predictor-variables-in-bayesian-linear-regression-using-residual-786f5eea0d12" target="_blank" class="note">
                         <h3 class="note__title">Feature Importance in Bayesian Regression</h3>
                         <p class="note__excerpt">Why feature selection matters in Bayesian models—assessing true predictive value based on causal impact, not correlation.</p>
                         <span class="note__meta">Towards Data Science</span>
                         <span class="note__read">Read →</span>
                     </a>
-                    
+
                     <a href="https://www.linkedin.com/pulse/retrieval-augmented-generation-rags-sheharyar-akhtar-qfs4f/" target="_blank" class="note">
                         <h3 class="note__title">Building RAG Systems from Scratch</h3>
                         <p class="note__excerpt">Architecture decisions when building retrieval-augmented generation—from embeddings to production deployment.</p>
                         <span class="note__meta">LinkedIn</span>
                         <span class="note__read">Read →</span>
                     </a>
-                </div>
+                            </div>
             </div>
         </section>
 
@@ -578,7 +584,7 @@
                 
                 <p class="contact__text">
                     If you're working on problems involving uncertainty, decision systems, or market structure—I'm open to thoughtful conversations.
-                </p>
+                        </p>
                 
                 <div class="contact__grid">
                     <div class="contact__info">
@@ -619,7 +625,7 @@
                                     placeholder="Name"
                                     required
                                 >
-                            </div>
+                        </div>
                             <div class="contact__form-group">
                                 <input 
                                     type="email" 
@@ -629,7 +635,7 @@
                                     placeholder="Email"
                                     required
                                 >
-                            </div>
+                    </div>
                             <div class="contact__form-group">
                                 <textarea 
                                     name="entry.1070032049" 
@@ -639,17 +645,17 @@
                                     rows="4"
                                     required
                                 ></textarea>
-                            </div>
+                        </div>
                             <button type="submit" class="contact__submit">
                                 Send Message
                             </button>
                         </form>
                         <div id="form-success" class="form-success">
                             Message sent! I'll get back to you soon.
-                        </div>
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                     </div>
-                </div>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
