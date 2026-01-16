@@ -131,3 +131,37 @@ if (hiddenIframe) {
         }
     })
 }
+
+/*==================== SCROLL REVEAL ANIMATIONS ====================*/
+document.addEventListener('DOMContentLoaded', () => {
+    // Elements to reveal on scroll
+    const revealElements = document.querySelectorAll('.section__title, .principles__list, .work__grid, .projects__container, .mcf__container, .notes__grid, .contact__grid')
+    
+    // Add reveal class
+    revealElements.forEach(el => {
+        el.classList.add('reveal')
+    })
+    
+    // Stagger children for specific containers
+    const staggerContainers = document.querySelectorAll('.principles__list, .work__grid, .notes__grid')
+    staggerContainers.forEach(el => {
+        el.classList.add('stagger-children')
+    })
+    
+    // Intersection Observer for scroll reveal
+    const revealOnScroll = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active')
+            }
+        })
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    })
+    
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal, .stagger-children').forEach(el => {
+        revealOnScroll.observe(el)
+    })
+})
