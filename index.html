@@ -73,12 +73,12 @@
             <div class="hero__container container">
                 <h1 class="hero__name">Sheharyar Akhtar</h1>
                 <p class="hero__title">Building decision-first systems for uncertain environments</p>
-                <p class="hero__subtitle">LLM Evaluation · Bayesian Modeling · Quantitative Systems · Decision Infrastructure</p>
+                <p class="hero__subtitle">LLM Evaluation · Bayesian Modeling · Quantitative Finance · Automated Review Systems</p>
                 
                 <p class="hero__description">
                     I design systems that reduce decision errors by placing actions in historical, statistical, and behavioral context.
-                    My work spans LLM evaluation at scale (Meta LLaMA), Bayesian behavioral modeling, and quantitative market research.
-                    Currently: leading reasoning evaluation at Turing, building <a href="#mcf" class="hero__link">Markov Chain Finance</a>.
+                    My work spans automated quality evaluation for LLM annotation pipelines (Meta, Apple, Microsoft), Bayesian behavioral modeling, and quantitative finance research.
+                    Currently: building Automated Reviewer systems across multiple Microsoft streams at Turing, running <a href="https://markovchainfinance.com" target="_blank" class="hero__link">Markov Chain Finance</a>.
                 </p>
 
                 <div class="hero__links">
@@ -138,15 +138,15 @@
                 
                 <div class="work__grid">
                     <div class="work__card">
-                        <h3 class="work__card-title">LLM Evaluation & Tooling</h3>
+                        <h3 class="work__card-title">LLM Evaluation & Automated Review</h3>
                         <ul class="work__card-list">
-                            <li>Designing scalable reasoning evaluation frameworks</li>
-                            <li>QA calibration across 150+ contributors</li>
-                            <li>Tooling for reproducible SWE reasoning tasks</li>
+                            <li>Building Automated Reviewer systems for annotation quality</li>
+                            <li>Quality dimension definition, agent prompting, calibration</li>
+                            <li>Deterministic validation scripts & quality/diversity reporting</li>
                         </ul>
                         <p class="work__card-artifact">
                             <span class="artifact__label">Artifact:</span> 
-                            Colab → Docker → GCP Workstations evaluation pipeline
+                            AR platform deployed across Meta, Apple, Microsoft streams
                         </p>
                             </div>
 
@@ -179,13 +179,13 @@
                     <div class="work__card">
                         <h3 class="work__card-title">Quantitative Market Research</h3>
                         <ul class="work__card-list">
-                            <li>Volatility regimes & spectral analysis</li>
+                            <li>Phase space regime analysis & Mahalanobis energy</li>
                             <li>Probabilistic portfolio analytics</li>
-                            <li>Behavior-aware framing tools</li>
+                            <li>Factor-level dynamics & conflict scoring</li>
                         </ul>
                         <p class="work__card-artifact">
                             <span class="artifact__label">Artifact:</span> 
-                            Markov Chain Finance research notebooks & dashboards
+                            <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a> — live decision-support tools
                         </p>
                                 </div>
                                 </div>
@@ -202,9 +202,9 @@
                 <article class="project project--collapsed" data-project="1">
                     <div class="project__header">
                         <div class="project__header-content">
-                            <h3 class="project__title">LLM Evaluation & Agentic Tooling</h3>
-                            <span class="project__context">Turing · Meta & Apple · 2024–Present</span>
-                            <p class="project__summary">Pod Lead → Calibrator → Tooling Champion for SWE-bench annotation and automated quality assessment</p>
+                            <h3 class="project__title">LLM Evaluation & Automated Review Systems</h3>
+                            <span class="project__context">Turing · Meta, Apple, Microsoft · 2024–Present</span>
+                            <p class="project__summary">Pod Lead → Calibrator → Tooling Champion → Automated Reviewer architect across three major client streams</p>
                         </div>
                         <span class="project__toggle">+</span>
                     </div>
@@ -254,16 +254,17 @@
                         <div class="project__section">
                             <h4>My Roles (Progressive)</h4>
                             <ul>
-                                <li><strong>Pod Lead:</strong> Managed team of 5 annotators—onboarding, training, daily QA reviews, performance tracking</li>
-                                <li><strong>Calibrator:</strong> Reviewed other pod leads' evaluations to ensure cross-team consistency</li>
-                                <li><strong>Tooling Champion:</strong> Built infrastructure for new Meta projects—Agentless SWE-bench approach, Colab/GCP/Kubernetes systems for agentic annotation workflows</li>
-                                <li><strong>Apple (Current):</strong> Autoreviewer team—defining quality dimensions for tasks, prompting QA agents to automatically score annotations</li>
+                                <li><strong>Pod Lead (Meta):</strong> Managed team of 5 annotators—onboarding, training, daily QA reviews, performance tracking</li>
+                                <li><strong>Calibrator (Meta):</strong> Reviewed other pod leads' evaluations to ensure cross-team consistency</li>
+                                <li><strong>Tooling Champion (Meta):</strong> Built infrastructure for Agentless SWE-bench approach, Colab/GCP/Kubernetes systems for agentic annotation workflows</li>
+                                <li><strong>Autoreviewer (Apple):</strong> Defined quality dimensions, built system prompts per dimension, calibrated AR agents against gold-standard human reviews</li>
+                                <li><strong>Autoreviewer (Microsoft — Current):</strong> Building AR systems across multiple streams—quality dimension definition, API creation, GCloud VM deployment, deterministic validation scripts, quality &amp; diversity reporting for client delivery</li>
                             </ul>
                         </div>
                         
                         <div class="project__section">
                             <h4>Impact</h4>
-                            <p>Annotation quality directly shaped Meta's SWE-bench performance. Promoted through 4 roles in under 5 months based on judgment and systems thinking. Now designing automated evaluation pipelines at Apple.</p>
+                            <p>Annotation quality directly shaped Meta's SWE-bench performance. Promoted through 5 roles in under 8 months. AR system now runs automatically on every trainer submission—storing review history for self-correction, human reviewer validation, and ongoing prompt calibration. Quality reports generated from AR data serve as client deliverables.</p>
                         </div>
                         
                         <div class="project__section project__section--reflection">
@@ -431,81 +432,86 @@
                                 </div>
                 </article>
 
-                <!-- Project 4: Volatility Regimes -->
+                <!-- Project 4: Phase Space Regime Analysis -->
                 <article class="project project--collapsed" data-project="4">
                     <div class="project__header">
                         <div class="project__header-content">
-                            <h3 class="project__title">Volatility Regime Detection & Market Structure</h3>
-                            <span class="project__context">Markov Chain Finance · Ongoing</span>
-                            <p class="project__summary">Research framework: context over prediction using HMMs, FFT, and Bayesian changepoint detection</p>
-                                </div>
+                            <h3 class="project__title">Phase Space Regime Analysis</h3>
+                            <span class="project__context">Markov Chain Finance · Live at <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a></span>
+                            <p class="project__summary">Mapping price dynamics into velocity–acceleration space with Mahalanobis energy for regime classification</p>
+                        </div>
                         <span class="project__toggle">+</span>
-                            </div>
+                    </div>
 
                     <div class="project__body">
                         <div class="project__section">
                             <h4>Problem</h4>
-                            <p>Most trading tools answer "what happened?" I wanted to answer "what environment are we in?" Traders mis-time volatility positions not because they lack information, but because they lack context.</p>
-                            </div>
+                            <p>Most market tools answer "what happened?" I wanted to answer "what environment are we in?" Most trading days are statistically unremarkable—they cluster near the origin in phase space. The question is detecting when they aren't, and giving investors context instead of predictions.</p>
+                        </div>
 
                         <div class="project__section">
                             <h4>Why It Was Hard</h4>
-                            <p>Regimes are latent—you can only infer them. Hindsight bias makes historical analysis misleading. The real challenge: distinguish volatility levels from regime transitions. High volatility in a stable regime is different from medium volatility during a transition.</p>
+                            <p>Phase space requires estimating covariance structure, not just volatility. Choosing the right energy metric matters—Mahalanobis distance accounts for correlation between velocity and acceleration that simpler measures miss. Distinguishing genuine regime transitions from noise, and making the output actionable rather than academic, were the real engineering challenges.</p>
                         </div>
 
                         <div class="project__diagram">
-                            <svg viewBox="0 0 800 180" class="architecture-diagram">
+                            <svg viewBox="0 0 900 180" class="architecture-diagram">
                                 <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
                                 <text x="60" y="100" class="diagram-text">Price Data</text>
                                 
-                                <rect x="150" y="40" width="110" height="45" rx="5" class="diagram-node"/>
-                                <text x="205" y="67" class="diagram-text">Realized Vol</text>
+                                <rect x="140" y="55" width="120" height="60" rx="5" class="diagram-node"/>
+                                <text x="200" y="82" class="diagram-text">Velocity +</text>
+                                <text x="200" y="99" class="diagram-text-small">Acceleration</text>
                                 
-                                <rect x="150" y="105" width="110" height="45" rx="5" class="diagram-node"/>
-                                <text x="205" y="132" class="diagram-text">FFT/Spectral</text>
+                                <rect x="290" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
+                                <text x="355" y="78" class="diagram-text">Phase Space</text>
+                                <text x="355" y="96" class="diagram-text-small">(4 quadrants)</text>
                                 
-                                <rect x="300" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
-                                <text x="365" y="85" class="diagram-text">Hidden Markov</text>
-                                <text x="365" y="102" class="diagram-text-small">Model (PyMC)</text>
+                                <rect x="450" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
+                                <text x="515" y="78" class="diagram-text">Mahalanobis</text>
+                                <text x="515" y="96" class="diagram-text-small">Energy E(t)</text>
                                 
-                                <rect x="470" y="55" width="120" height="60" rx="5" class="diagram-node"/>
-                                <text x="530" y="82" class="diagram-text">Regime State</text>
-                                <text x="530" y="100" class="diagram-text-small">P(state) + uncertainty</text>
+                                <rect x="610" y="55" width="120" height="60" rx="5" class="diagram-node"/>
+                                <text x="670" y="78" class="diagram-text">Transitions</text>
+                                <text x="670" y="96" class="diagram-text-small">1st + 2nd order</text>
                                 
-                                <rect x="630" y="55" width="140" height="60" rx="5" class="diagram-node"/>
-                                <text x="700" y="78" class="diagram-text">Historical Context</text>
-                                <text x="700" y="95" class="diagram-text-small">"last 5 times this</text>
-                                <text x="700" y="108" class="diagram-text-small">happened..."</text>
+                                <rect x="760" y="55" width="120" height="60" rx="5" class="diagram-node"/>
+                                <text x="820" y="78" class="diagram-text">Decision</text>
+                                <text x="820" y="96" class="diagram-text-small">Context</text>
                                 
-                                <path d="M110 80 L150 62" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M110 110 L150 128" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M260 62 L300 75" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M260 128 L300 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M430 85 L470 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M590 85 L630 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <rect x="450" y="145" width="130" height="30" rx="5" class="diagram-node-secondary"/>
+                                <text x="515" y="165" class="diagram-text-small">90% stability contour</text>
+                                
+                                <path d="M110 95 L140 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M260 85 L290 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M420 85 L450 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M580 85 L610 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M730 85 L760 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
+                                <path d="M515 115 L515 145" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
                             </svg>
                         </div>
 
                         <div class="project__section">
                             <h4>Approach</h4>
                             <ul>
-                                <li><strong>Hidden Markov Models:</strong> Regime detection with uncertainty quantification</li>
-                                <li><strong>Spectral Analysis:</strong> FFT-based identification of cyclical patterns</li>
-                                <li><strong>Bayesian Changepoint:</strong> PyMC models for structural breaks</li>
-                                <li><strong>Context Framing:</strong> "Last 5 times we had this structure" tools</li>
-                                        </ul>
+                                <li><strong>Phase Space Mapping:</strong> Returns as velocity, change in momentum as acceleration—each day becomes a coordinate in 2D phase space</li>
+                                <li><strong>Mahalanobis Energy:</strong> E(t) = x&#x1D40;&#x3A3;&#x207B;&#xB9;x measures distance from equilibrium, accounting for covariance structure</li>
+                                <li><strong>Markov Transitions:</strong> 1st-order transition matrix plus 2nd-order tensor (previous regime conditions the next)</li>
+                                <li><strong>Energy-Conditioned Splits:</strong> Separate transition behavior inside vs outside the 90% stability ellipse</li>
+                                <li><strong>Survival Analysis:</strong> Kaplan–Meier curves for regime duration with current dwell marker</li>
+                            </ul>
                         </div>
 
                         <div class="project__section">
                             <h4>Output</h4>
-                            <p>Research framework that reframes analysis: instead of "what will happen?" → "what environment are we in?" Building toward public tools through MCF.</p>
-                                </div>
+                            <p>Live at <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a>. Validated on BTC-USD with 3,653 days of data. Three tools in production: Phase Regime analysis, Regime Detector with LLM explanations, and Portfolio Optimizer with diversification metrics.</p>
+                        </div>
 
                         <div class="project__section project__section--reflection">
                             <h4>What I'd Do Differently</h4>
-                            <p>Start simpler. I built complex multi-state HMMs before checking if a 2-state model added decision value. It often didn't.</p>
-                                    </div>
-                                </div>
+                            <p>Covariance window sensitivity matters more than model complexity. I spent time on elaborate regime definitions before discovering that the rolling window for estimating Σ was the dominant factor in output stability.</p>
+                        </div>
+                    </div>
                 </article>
                             </div>
         </section>
@@ -514,48 +520,61 @@
         <section class="mcf section" id="mcf">
             <div class="mcf__container container">
                 <h2 class="section__title">Markov Chain Finance</h2>
-                <p class="mcf__subtitle">Research Lab</p>
+                <p class="mcf__subtitle">Decision-Support Research Platform</p>
                 
                 <blockquote class="mcf__philosophy">
                     "Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen."
                 </blockquote>
 
                 <p class="mcf__description">
-                    MCF explores how markets behave across regimes rather than predicting prices.
-                    I build probabilistic models and decision tools that frame risk, volatility, and uncertainty in historical context.
-                    The goal isn't alpha generation—it's decision quality under uncertainty.
+                    A decision-support platform for self-directed investors and quantitative practitioners.
+                    The core philosophy is context over prediction—showing what kind of environment you're operating in
+                    rather than forecasting what happens next. Not alpha generation. Decision quality under uncertainty.
                 </p>
-                
+
                 <div class="mcf__themes">
-                    <h3>Research Themes</h3>
-                    <ul>
-                        <li><strong>Regime Detection:</strong> Hidden Markov Models for identifying market states with uncertainty quantification—not "we're in regime X" but probability distributions over states</li>
-                        <li><strong>Volatility Structure:</strong> Surface analysis, term structure dynamics, and the difference between volatility levels vs. regime transitions</li>
-                        <li><strong>Spectral Analysis:</strong> FFT-based identification of cyclical patterns—separating structural cycles from noise</li>
-                        <li><strong>Behavioral Context:</strong> Historical analog tools that surface "the last N times we had this structure"—context over prediction</li>
-                                        </ul>
-                        </div>
+                    <h3>The Framework</h3>
+                    <p class="mcf__framework-description">
+                        Phase space analysis applied to financial assets. Price is mapped into velocity (returns) and acceleration (change in momentum).
+                        Each trading day becomes a point in phase space—most cluster near the origin, statistically unremarkable.
+                        Distance from equilibrium is measured using Mahalanobis energy E(t) = x&#x1D40;&#x3A3;&#x207B;&#xB9;x.
+                        Breaching the 90% stability contour signals a statistically rare state.
+                    </p>
+                </div>
 
                 <div class="mcf__building">
-                    <h3>Current Work</h3>
+                    <h3>Live Tools</h3>
                     <ul>
-                        <li>Regime visualization dashboard (Streamlit + PyMC)</li>
-                        <li>Historical context API for current market conditions</li>
-                        <li>Bayesian changepoint detection for structural breaks</li>
-                        <li>Research notes on market structure, decision-making, and uncertainty framing</li>
-                                        </ul>
-                            </div>
+                        <li><strong>Phase Regime:</strong> Map any ticker into velocity–acceleration phase space. Four quadrants (Accelerating Up, Decelerating Down, Accelerating Down, Decelerating Up). 1st-order Markov transitions, 2nd-order transition tensor, energy-conditioned splits inside vs outside the 90% stability ellipse, Kaplan–Meier survival curves per regime, forward return distributions</li>
+                        <li><strong>Regime Detector:</strong> Volatility state (Low / Medium / High via 20-day rolling std percentile) + trend state (Strong / Weak / Negative via 50d vs 200d SMA). Transition probability matrix, historical regime comparisons, LLM-powered decision framing. Supported assets: SPY, QQQ, BTC-USD, ETH-USD, GLD</li>
+                        <li><strong>Portfolio Optimizer:</strong> Effective number of bets (PCA-based diversification measure), Mean-Variance (MPT) max-Sharpe weights, Risk Parity equal-risk-contribution weights, drawdown analysis, Sortino ratio comparison across strategies</li>
+                    </ul>
+                </div>
+
+                <div class="mcf__themes">
+                    <h3>Research Layer</h3>
+                    <ul>
+                        <li><strong>Factor-Level Phase Space:</strong> Rolling PCA on an 8-asset universe extracts three factors—PC1 Market, PC2 Rotation, PC3 Idiosyncratic—each mapped independently into phase space</li>
+                        <li><strong>Lead/Lag Discovery:</strong> PC1 regime transitions lead asset-level transitions by approximately 13 days</li>
+                        <li><strong>Cross-Factor Conflict:</strong> A conflict score measuring when factors disagree—high conflict degrades transition predictability. Conflict-conditioned transition matrices show regime persistence changes under high vs low conflict</li>
+                        <li><strong>Rebalancing:</strong> Energy-triggered rebalancing with a low-conflict filter achieves Sharpe 1.48 vs calendar monthly at 1.44</li>
+                        <li><strong>Stress-Strain Analysis:</strong> Drawdown event detection (peak → trough → recovery) with stress–strain curve fitting across assets</li>
+                    </ul>
+                </div>
 
                 <div class="mcf__stack">
                     <h3>Stack</h3>
-                    <p>Python · PyMC · NumPy · Pandas · Plotly · Streamlit · HMMs · FFT · Bayesian Inference</p>
-                            </div>
+                    <p>React · Vite · Flask · Azure Functions · Supabase · Python · NumPy · Plotly · yfinance</p>
+                </div>
 
                 <div class="mcf__links">
+                    <a href="https://markovchainfinance.com" target="_blank" class="mcf__link">
+                        <i class="uil uil-globe"></i> markovchainfinance.com
+                    </a>
                     <a href="https://github.com/sheharyarakhtar" target="_blank" class="mcf__link">
                         <i class="uil uil-github-alt"></i> Research Notebooks
                     </a>
-            </div>
+                </div>
             </div>
         </section>
 

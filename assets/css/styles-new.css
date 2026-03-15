@@ -699,13 +699,48 @@ img {
     color: var(--accent);
 }
 
-.mcf__themes ul li strong {
+.mcf__themes ul li strong,
+.mcf__building ul li strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.mcf__framework-description {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.mcf__traction {
+    margin-bottom: 2.5rem;
+}
+
+.mcf__traction h3 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+}
+
+.mcf__traction p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.mcf__traction strong {
     color: var(--text-primary);
     font-weight: 500;
 }
 
 .mcf__links {
     padding-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
 }
 
 .mcf__link {
