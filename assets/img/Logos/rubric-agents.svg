@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Rubric Agents logo">
+<rect width="1024" height="1024" rx="200" fill="#FFFFFF"/>
+<rect x="256" y="256" width="147" height="147" rx="18" fill="#157D76"/><rect x="438" y="256" width="147" height="147" rx="18" fill="#157D76"/><rect x="621" y="256" width="147" height="147" rx="18" fill="#157D76"/><rect x="256" y="438" width="147" height="147" rx="18" fill="#157D76"/><rect x="438" y="438" width="147" height="147" rx="18" fill="#1C2E4C"/><rect x="621" y="438" width="147" height="147" rx="18" fill="#1C2E4C"/><rect x="256" y="621" width="147" height="147" rx="18" fill="#1C2E4C"/><rect x="438" y="621" width="147" height="147" rx="18" fill="#1C2E4C"/><rect x="621" y="621" width="147" height="147" rx="18" fill="#1C2E4C"/>
+<rect x="204" y="419" width="615" height="8" fill="#1C2E4C"/>
+</svg>
