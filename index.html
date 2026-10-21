@@ -2,20 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Sheharyar Akhtar | GenAI Products and LLM Evaluation</title>
     <meta name="description" content="I build GenAI products, and the evaluation that tells you they work. Available for contract work, fixed-scope builds and evaluation audits.">
-    <meta name="keywords" content="GenAI Product Development, LLM Evaluation, Automated Review, RL Environments, Bayesian Modeling, Quantitative Finance">
     <meta name="author" content="Sheharyar Akhtar">
-
-    <!-- Open Graph -->
     <meta property="og:title" content="Sheharyar Akhtar | GenAI Products and LLM Evaluation">
     <meta property="og:description" content="I build GenAI products, and the evaluation that tells you they work.">
     <meta property="og:type" content="website">
-
-    <!-- Favicon -->
     <link rel="icon" href="assets/img/memoji.jpg" type="image/jpg">
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYL4VD0X58"></script>
     <script>
@@ -25,865 +20,380 @@
       gtag('config', 'G-SYL4VD0X58');
     </script>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
-    <link rel="stylesheet" href="assets/css/styles-new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-    <!-- SVG Defs for diagram arrows -->
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;">
-        <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                <polygon points="0 0, 10 3.5, 0 7" fill="#5c5c66"/>
-            </marker>
-            <marker id="arrowhead-accent" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                <polygon points="0 0, 10 3.5, 0 7" fill="#4a6ad4"/>
-            </marker>
-        </defs>
-    </svg>
-    
-    <!-- ==================== HEADER ==================== -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">SA</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#hire" class="nav__link">Hire</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#mcf" class="nav__link">MCF</a></li>
-                    <li class="nav__item"><a href="#notes" class="nav__link">Notes</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-                <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-bars"></i>
-            </div>
+<div class="wrap">
+
+    <header class="top">
+        <a href="#" class="name">Sheharyar Akhtar</a>
+        <nav aria-label="Sections">
+            <a href="#hire">Hire</a>
+            <a href="#work">Work</a>
+            <a href="#ventures">Ventures</a>
+            <a href="#experience">Experience</a>
+            <a href="#writing">Writing</a>
+            <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" rel="noopener" class="cta">Book a call</a>
         </nav>
     </header>
 
-    <main class="main">
-        <!-- ==================== HERO ==================== -->
-        <section class="hero section" id="hero">
-            <div class="hero__container container">
-                <h1 class="hero__name">Sheharyar Akhtar</h1>
-                <p class="hero__title">I build GenAI products, and the evaluation that tells you they work.</p>
-                <p class="hero__subtitle">GenAI Product Builds · LLM Evaluation · Automated Review · Bayesian Modeling</p>
-
-                <p class="hero__description">
-                    Five years across production ML, enterprise data and LLM evaluation. For the last two, I've built the systems that review AI training data at scale for frontier-lab and big-tech AI programs: auto-reviewers running across 17 languages and 1,000+ annotators, evaluation platforms, and pipelines that repair broken agentic tasks.
-                    Currently: taking on contract work and fixed-scope builds, running evaluation audits through <a href="https://rubricagents.com" target="_blank" class="hero__link">Rubric Agents</a>, and building <a href="https://markovchainfinance.com" target="_blank" class="hero__link">Markov Chain Finance</a>.
-                </p>
-
-                <div class="hero__links">
-                    <a href="https://github.com/sheharyarakhtar" target="_blank" class="hero__link-item">
-                        <i class="uil uil-github-alt"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/sheharyarakhtar/" target="_blank" class="hero__link-item">
-                        <i class="uil uil-linkedin-alt"></i> LinkedIn
-                        </a>
-                    <a href="mailto:sheharyar7146@gmail.com" class="hero__link-item">
-                        <i class="uil uil-envelope"></i> Email
-                    </a>
-                    <a href="assets/pdf/Resume_Sheharyar_Akhtar.pdf" target="_blank" class="hero__link-item">
-                        <i class="uil uil-file-alt"></i> CV
-                    </a>
-                    <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" class="hero__link-item">
-                        <i class="uil uil-calendar-alt"></i> Book a Call
-                    </a>
-                </div>
-                </div>
-        </section>
-
-        <!-- ==================== WORK WITH ME ==================== -->
-        <section class="hire section" id="hire">
-            <div class="work__container container">
-                <h2 class="section__title">Work With Me</h2>
-
-                <div class="services__grid">
-                    <div class="work__card">
-                        <span class="artifact__label">Contract</span>
-                        <h3 class="work__card-title services__title">Embedded with your team</h3>
-                        <p class="services__text">Part-time or full-time, by the hour or the month. LLM pipelines, automated review, evaluation and the data work around them.</p>
-                    </div>
-
-                    <div class="work__card">
-                        <span class="artifact__label">Fixed-scope build</span>
-                        <h3 class="work__card-title services__title">A GenAI product, start to finish</h3>
-                        <p class="services__text">A defined product or prototype for a set price, from brief to deployed app, with evaluation built in so you know how often it is right.</p>
-                    </div>
-
-                    <div class="work__card">
-                        <span class="artifact__label">Audit · Rubric Agents</span>
-                        <h3 class="work__card-title services__title">Find what's broken</h3>
-                        <p class="services__text">Send 20 tasks from your RL environments or eval sets. You get back which ones are broken, and why, each finding reproduced by running it. <a href="https://rubricagents.com" target="_blank">rubricagents.com</a></p>
-                    </div>
-                </div>
-
-                <p class="services__note">Rates are agreed on a short call once the scope is clear. <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank">Book a call</a></p>
-            </div>
-        </section>
-
-        <!-- ==================== HOW I THINK ==================== -->
-        <section class="principles section" id="principles">
-            <div class="principles__container container">
-                <h2 class="section__title">How I Think</h2>
-                
-                <ul class="principles__list">
-                    <li class="principles__item">
-                        <span class="principles__marker">01</span>
-                        <p>Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen.</p>
-                    </li>
-                    <li class="principles__item">
-                        <span class="principles__marker">02</span>
-                        <p>A model that can't explain why it's wrong is more dangerous than no model at all.</p>
-                    </li>
-                    <li class="principles__item">
-                        <span class="principles__marker">03</span>
-                        <p>Regimes matter more than averages. A 2% move in a low-volatility regime is not the same as a 2% move in a high-volatility regime.</p>
-                    </li>
-                    <li class="principles__item">
-                        <span class="principles__marker">04</span>
-                        <p>The hardest problems aren't technical—they're about calibrating human judgment at scale without losing signal.</p>
-                    </li>
-                    <li class="principles__item">
-                        <span class="principles__marker">05</span>
-                        <p>If your tool doesn't change a decision, it's a dashboard. I build systems that force better choices under uncertainty.</p>
-                    </li>
-                </ul>
-                            </div>
-        </section>
-
-        <!-- ==================== WHAT I WORK ON ==================== -->
-        <section class="work section" id="work">
-            <div class="work__container container">
-                <h2 class="section__title">What I Work On</h2>
-                
-                <div class="work__grid">
-                    <div class="work__card">
-                        <h3 class="work__card-title">LLM Evaluation & Automated Review</h3>
-                        <ul class="work__card-list">
-                            <li>Building Automated Reviewer systems for annotation quality</li>
-                            <li>Quality dimension definition, agent prompting, calibration</li>
-                            <li>Deterministic validation scripts & quality/diversity reporting</li>
-                        </ul>
-                        <p class="work__card-artifact">
-                            <span class="artifact__label">Artifact:</span> 
-                            Auto-reviewers in production across 17 languages and 1,000+ annotators
-                        </p>
-                            </div>
-
-                    <div class="work__card">
-                        <h3 class="work__card-title">Bayesian & Statistical Modeling</h3>
-                        <ul class="work__card-list">
-                            <li>Behavioral modeling under uncertainty</li>
-                            <li>Regime detection & changepoint analysis</li>
-                            <li>Simulation-based decision testing</li>
-                        </ul>
-                        <p class="work__card-artifact">
-                            <span class="artifact__label">Artifact:</span> 
-                            Bayesian agent pairing optimization, volatility regime models
-                        </p>
-                            </div>
-
-                    <div class="work__card">
-                        <h3 class="work__card-title">Data & MLOps Systems</h3>
-                        <ul class="work__card-list">
-                            <li>ML pipelines with monitoring, drift detection, auditability</li>
-                            <li>Streaming & batch infrastructure design</li>
-                            <li>Cost-aware cloud architecture</li>
-                        </ul>
-                        <p class="work__card-artifact">
-                            <span class="artifact__label">Artifact:</span> 
-                            PySpark + MLflow credit scoring system, Kafka pipelines
-                        </p>
-                            </div>
-
-                    <div class="work__card">
-                        <h3 class="work__card-title">Quantitative Market Research</h3>
-                        <ul class="work__card-list">
-                            <li>Phase space regime analysis & Mahalanobis energy</li>
-                            <li>Probabilistic portfolio analytics</li>
-                            <li>Factor-level dynamics & conflict scoring</li>
-                        </ul>
-                        <p class="work__card-artifact">
-                            <span class="artifact__label">Artifact:</span> 
-                            <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a> — live decision-support tools
-                        </p>
-                                </div>
-                                </div>
-                            </div>
-        </section>
-
-        <!-- ==================== SELECTED WORK ==================== -->
-        <section class="projects section" id="projects">
-            <div class="projects__container container">
-                <h2 class="section__title">Selected Work</h2>
-                <p class="projects__intro">Click to expand each case study</p>
-
-                <!-- Project 1: LLM Evaluation -->
-                <article class="project project--collapsed" data-project="1">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">LLM Evaluation & Automated Review Systems</h3>
-                            <span class="project__context">Turing · frontier-lab and big-tech AI programs · 2024–Present</span>
-                            <p class="project__summary">Pod Lead → Calibrator → Tooling Champion → Automated Reviewer architect across several client programs</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-                    
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>A frontier lab needed to improve its model's performance on the SWE-bench benchmark through human annotations. Contributors would "think on behalf of the model"—navigating repositories to trace from a GitHub issue to the patch that resolves it. At 150+ contributors, annotation quality variance directly impacted benchmark scores.</p>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>Why It Was Hard</h4>
-                            <p>Reasoning through codebases is subjective—what counts as "good" navigation? Pod leads interpreted quality differently. Calibrating 150+ people to consistent standards while maintaining throughput required systems, not just guidelines. Later, scaling to agentic workflows (Agentless SWE-bench) meant building infrastructure that didn't exist.</p>
-                        </div>
-                        
-                        <div class="project__diagram">
-                            <svg viewBox="0 0 800 180" class="architecture-diagram">
-                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="60" y="100" class="diagram-text">GitHub Issues</text>
-                                
-                                <rect x="140" y="70" width="120" height="50" rx="5" class="diagram-node"/>
-                                <text x="200" y="95" class="diagram-text">150+ Annotators</text>
-                                <text x="200" y="110" class="diagram-text-small">(reasoning traces)</text>
-                                
-                                <rect x="290" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
-                                <text x="340" y="95" class="diagram-text">Pod Lead QA</text>
-                                <text x="340" y="110" class="diagram-text-small">(my team of 5)</text>
-                                
-                                <rect x="420" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
-                                <text x="470" y="95" class="diagram-text">Calibration</text>
-                                <text x="470" y="110" class="diagram-text-small">(cross-pod)</text>
-                                
-                                <rect x="550" y="70" width="110" height="50" rx="5" class="diagram-node"/>
-                                <text x="605" y="100" class="diagram-text">SWE-bench Score</text>
-                                
-                                <rect x="290" y="150" width="230" height="30" rx="5" class="diagram-node-secondary"/>
-                                <text x="405" y="170" class="diagram-text-small">Tooling: Colab / GCP / Kubernetes (Agentless)</text>
-                                
-                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M260 95 L290 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M390 95 L420 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M520 95 L550 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M405 120 L405 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                            </svg>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>My Roles (Progressive)</h4>
-                            <ul>
-                                <li><strong>Pod Lead:</strong> Managed a team of 5 annotators: onboarding, training, daily QA reviews, performance tracking</li>
-                                <li><strong>Calibrator:</strong> Core-team role setting the quality bar for the whole program, so hallucinated or unreasoned annotations didn't pass; reviewed pod leads' evaluations for cross-team consistency</li>
-                                <li><strong>Tooling Champion:</strong> Built an Agentless-style pipeline that localizes a bug step by step (repository tree, then files, then functions) before repairing it. The client adopted it for a five-month campaign in 4-step and 6-step variants, on Colab/GCP/Kubernetes</li>
-                                <li><strong>Autoreviewer (big-tech client):</strong> Defined quality dimensions, wrote system and agent prompts, calibrated against gold-standard human reviews, and took it to production on a labeling platform used by 1,000+ annotators across 17 languages</li>
-                                <li><strong>Evaluation platforms:</strong> Built evaluation platforms for chain-of-thought and ReAct annotation projects, merged them into one API service the client's frontend team integrated, and built a UI-annotation reviewer that judges actions from initial and final interface state</li>
-                                <li><strong>Task audit and repair:</strong> A pipeline that finds and repairs broken agentic tasks, validated with a golden-trajectory run that must pass and a no-op run that must fail</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>Impact</h4>
-                            <p>Annotation quality directly shaped the client model's SWE-bench performance. Promoted through 5 roles in under 8 months. AR system now runs automatically on every trainer submission—storing review history for self-correction, human reviewer validation, and ongoing prompt calibration. Quality reports generated from AR data serve as client deliverables.</p>
-                        </div>
-                        
-                        <div class="project__section project__section--reflection">
-                            <h4>What I'd Do Differently</h4>
-                            <p>Build calibration tooling earlier. We relied on manual cross-checks too long—an embedding-based similarity check on reasoning traces would have surfaced drift faster.</p>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Project: Public benchmark audits -->
-                <article class="project project--collapsed" data-project="audits">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Verifier Audits of Public RL Benchmarks</h3>
-                            <span class="project__context">Rubric Agents · Oct 2026 · <a href="https://rubricagents.com/evaluations" target="_blank">rubricagents.com/evaluations</a></span>
-                            <p class="project__summary">6 of DeepSWE's 30 hardest tasks reject a correct solution; all 13 FrontierSWE tasks reviewed have a score-changing finding</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>A benchmark's pass rate is only as reliable as its tasks. When a verifier checks for one specific implementation instead of correct behaviour, a low pass rate reads as model weakness when it is really a grading error.</p>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Execution validation:</strong> The reference solution must pass and a do-nothing run must fail on every task</li>
-                                <li><strong>Minimal-change probes:</strong> Where a task looks defective, change the reference slightly while keeping it correct, and run it through the task's own verifier</li>
-                                <li><strong>Evidence per finding:</strong> Every finding is cited to the file and line it rests on, and labelled verified only when a run reproduces it</li>
-                            </ul>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Output</h4>
-                            <p>Public audits of DeepSWE, Terminal-Bench and FrontierSWE. In one DeepSWE task, naming a feature "Auto TOC" instead of "Auto Table of Contents" scores 0 with otherwise identical code; models passed that task 3% of the time.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project: AI photoshoot pipeline -->
-                <article class="project project--collapsed" data-project="photoshoot">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">AI Photoshoot Pipeline</h3>
-                            <span class="project__context">Built for Kogency, an AI content studio · Oct 2026</span>
-                            <p class="project__summary">Upload a model, garments and shoes; get back a complete, consistent photoshoot</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <figure class="project__figure">
-                            <img src="assets/img/Portfolio/photoshoot-run.jpg" alt="Four photoshoot frames of the same model in a beige top and burgundy skirt, from front, back, side and a closer upper-body angle" loading="lazy">
-                            <figcaption>One run: 5 of 5 shots rendered</figcaption>
-                        </figure>
-
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>The studio produced AI photoshoots by hand in a general-purpose tool, shot by shot, and wanted its own platform that turns a set of product photos into a finished shoot.</p>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Claude as director:</strong> Plans the shot list (front, back, side profile, close shots) and picks which reference images each shot needs</li>
-                                <li><strong>Gemini as renderer:</strong> Renders shots in parallel with retries, at chosen aspect ratio and resolution</li>
-                                <li><strong>Run history:</strong> Every run is stored with its prompts, references and timings for review</li>
-                            </ul>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Output</h4>
-                            <p>A full shoot in one run, at roughly 20 to 40 seconds per shot, with the same model and garments consistent across the set. Next.js on Vercel.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project: Design Studio -->
-                <article class="project project--collapsed" data-project="design-studio">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Design Studio for Apparel Collections</h3>
-                            <span class="project__context">Own product · Oct 2026 · <a href="https://model-spec.vercel.app" target="_blank">model-spec.vercel.app</a></span>
-                            <p class="project__summary">From a brief and references to a manufacturer-ready tech pack</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <figure class="project__figure">
-                            <img src="assets/img/Portfolio/design-studio-techpack.jpg" alt="Tech pack page for a sea-green Henley tee with a beach graphic, listing style number, fit, fabric, colorway and print technique" loading="lazy">
-                            <figcaption>Generated tech pack, one style page</figcaption>
-                        </figure>
-
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>Image models can generate designs, but a design is no use to a manufacturer without specs. The tool covers the whole path from a seasonal brief to a document a factory can work from.</p>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Lineup generation:</strong> A brief, a palette and reference images produce a lineup of candidate designs</li>
-                                <li><strong>Curation:</strong> Shortlist designs and assemble them into a collection</li>
-                                <li><strong>Tech pack export:</strong> Each style gets a style number, garment type, fit, fabric, colorway with hex values, and print technique and placement</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2: Bayesian Pairing -->
-                <article class="project project--collapsed" data-project="2">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Agent-Caller Pairing Optimization</h3>
-                            <span class="project__context">Afiniti · 2021–2023</span>
-                            <p class="project__summary">Item Response Theory + diagonal allocation delivering 5-10% revenue lift at sub-100ms latency</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-                    
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>Call center routing happens in milliseconds but determines revenue outcomes. The question: which agent should take which caller to maximize conversion? Random routing leaves money on the table. But the "best" pairing depends on latent properties of both agents and callers that you can't directly observe.</p>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>Why It Was Hard</h4>
-                            <p>Agent skill and caller intent are latent—you only see outcomes. A sale might happen because the agent is great, the caller was easy, or the pairing worked. Disentangling these effects requires careful statistical modeling. And the model has to run in production at sub-100ms latency for real-time routing decisions.</p>
-                        </div>
-                        
-                        <div class="project__diagram">
-                            <svg viewBox="0 0 800 180" class="architecture-diagram">
-                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="60" y="100" class="diagram-text">Incoming Call</text>
-                                
-                                <rect x="140" y="70" width="120" height="50" rx="5" class="diagram-node"/>
-                                <text x="200" y="95" class="diagram-text">Caller Features</text>
-                                <text x="200" y="110" class="diagram-text-small">(real-time)</text>
-                                
-                                <rect x="290" y="70" width="120" height="50" rx="5" class="diagram-node-highlight"/>
-                                <text x="350" y="95" class="diagram-text">IRT Model</text>
-                                <text x="350" y="110" class="diagram-text-small">(Stan)</text>
-                                
-                                <rect x="440" y="70" width="130" height="50" rx="5" class="diagram-node-highlight"/>
-                                <text x="505" y="95" class="diagram-text">Diagonal Alloc.</text>
-                                <text x="505" y="110" class="diagram-text-small">(high-rev → best agent)</text>
-                                
-                                <rect x="600" y="70" width="110" height="50" rx="5" class="diagram-node"/>
-                                <text x="655" y="100" class="diagram-text">Revenue Uplift</text>
-                                
-                                <rect x="140" y="150" width="130" height="30" rx="5" class="diagram-node-secondary"/>
-                                <text x="205" y="170" class="diagram-text-small">Caller Groups (Decision Trees)</text>
-                                
-                                <rect x="440" y="150" width="130" height="30" rx="5" class="diagram-node-secondary"/>
-                                <text x="505" y="170" class="diagram-text-small">A/B Holdout Validation</text>
-                                
-                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M260 95 L290 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M410 95 L440 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M570 95 L600 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M200 120 L200 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                                <path d="M505 120 L505 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                            </svg>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Item Response Theory:</strong> Estimated latent agent performance and caller propensity using Bayesian IRT models in Stan—agents and callers as "items" and "respondents"</li>
-                                <li><strong>Diagonal Allocation:</strong> At runtime, high-expected-revenue callers routed to best-performing agents, low-expected to average—optimal matching under constraints</li>
-                                <li><strong>Caller Segmentation:</strong> Built caller groups using decision trees; determined split metrics via discriminant analysis to maximize between-group variance</li>
-                                <li><strong>Feature Engineering:</strong> Engineered real-time features to predict purchase likelihood at call arrival—improved model validation 50%+</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="project__section">
-                            <h4>Impact</h4>
-                            <p><strong>5-10% revenue lift</strong> across global telco clients. Led 3 client launches in Iberia region. Promoted DS I → DS II. The diagonal allocation framework became the standard approach for new client deployments.</p>
-                        </div>
-                        
-                        <div class="project__section project__section--reflection">
-                            <h4>What I'd Do Differently</h4>
-                            <p>Simpler caller segmentation first. We over-engineered the decision tree splits before confirming that finer segmentation actually improved allocation. Often 3-5 groups were enough.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3: Credit Scoring -->
-                <article class="project project--collapsed" data-project="3">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Production Credit Scoring & ESG Platform</h3>
-                            <span class="project__context">Systems Limited · 2023–2024</span>
-                            <p class="project__summary">ML platform serving 50+ global business units with $5M+ pipeline contribution</p>
-                                </div>
-                        <span class="project__toggle">+</span>
-                            </div>
-
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>Banking clients needed credit scoring with regulatory explainability. A multinational needed ESG scoring across 50+ global business units with inconsistent data quality. Both required systems non-technical stakeholders could trust and regulators could audit.</p>
-                            </div>
-
-                        <div class="project__section">
-                            <h4>Why It Was Hard</h4>
-                            <p>Regulatory explainability conflicts with model complexity. Data pipelines needed both batch and real-time scoring across AWS and Azure. 50+ business units submitting data in different formats, currencies, reporting standards.</p>
-                            </div>
-
-                        <div class="project__diagram">
-                            <svg viewBox="0 0 800 180" class="architecture-diagram">
-                                <text x="400" y="20" class="diagram-text-small" style="fill: var(--text-muted)">AWS + Azure</text>
-                                
-                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="60" y="100" class="diagram-text">Raw Data</text>
-                                
-                                <rect x="140" y="70" width="110" height="50" rx="5" class="diagram-node"/>
-                                <text x="195" y="100" class="diagram-text">PySpark ETL</text>
-                                
-                                <rect x="280" y="70" width="110" height="50" rx="5" class="diagram-node"/>
-                                <text x="335" y="100" class="diagram-text">Feature Store</text>
-                                
-                                <rect x="420" y="70" width="100" height="50" rx="5" class="diagram-node-highlight"/>
-                                <text x="470" y="100" class="diagram-text">MLflow</text>
-                                
-                                <rect x="550" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="600" y="100" class="diagram-text">Scoring API</text>
-                                
-                                <rect x="680" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="730" y="95" class="diagram-text">SHAP</text>
-                                <text x="730" y="110" class="diagram-text-small">(explainability)</text>
-                                
-                                <rect x="420" y="150" width="100" height="30" rx="5" class="diagram-node-secondary"/>
-                                <text x="470" y="170" class="diagram-text-small">Drift Monitor</text>
-                                
-                                <path d="M110 95 L140 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M250 95 L280 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M390 95 L420 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M520 95 L550 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M650 95 L680 95" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M470 120 L470 150" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                            </svg>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>ML Platform:</strong> PySpark ETL, PostgreSQL feature store, MLflow tracking across AWS + Azure</li>
-                                <li><strong>Interpretable Models:</strong> SHAP-based explanations for compliance</li>
-                                <li><strong>ESG Framework:</strong> Standardized ingestion for 50+ BUs with uncertainty quantification</li>
-                                <li><strong>Pre-Sales:</strong> RFP responses contributing $5M+ pipeline value</li>
-                            </ul>
-                            </div>
-
-                        <div class="project__section">
-                            <h4>Impact</h4>
-                            <p>Platform serves multiple banking clients. ESG framework deployed across <strong>50+ global business units</strong>. Reduced deployment time from weeks to days. <strong>$5M+ pipeline</strong> contribution.</p>
-                        </div>
-
-                        <div class="project__section project__section--reflection">
-                            <h4>What I'd Do Differently</h4>
-                            <p>Document regulatory requirements exhaustively upfront. Late-stage compliance questions caused rework.</p>
-                            </div>
-                                </div>
-                </article>
-
-                <!-- Project 4: Phase Space Regime Analysis -->
-                <article class="project project--collapsed" data-project="4">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Phase Space Regime Analysis</h3>
-                            <span class="project__context">Markov Chain Finance · Live at <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a></span>
-                            <p class="project__summary">Mapping price dynamics into velocity–acceleration space with Mahalanobis energy for regime classification</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Problem</h4>
-                            <p>Most market tools answer "what happened?" I wanted to answer "what environment are we in?" Most trading days are statistically unremarkable—they cluster near the origin in phase space. The question is detecting when they aren't, and giving investors context instead of predictions.</p>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Why It Was Hard</h4>
-                            <p>Phase space requires estimating covariance structure, not just volatility. Choosing the right energy metric matters—Mahalanobis distance accounts for correlation between velocity and acceleration that simpler measures miss. Distinguishing genuine regime transitions from noise, and making the output actionable rather than academic, were the real engineering challenges.</p>
-                        </div>
-
-                        <div class="project__diagram">
-                            <svg viewBox="0 0 900 180" class="architecture-diagram">
-                                <rect x="10" y="70" width="100" height="50" rx="5" class="diagram-node"/>
-                                <text x="60" y="100" class="diagram-text">Price Data</text>
-                                
-                                <rect x="140" y="55" width="120" height="60" rx="5" class="diagram-node"/>
-                                <text x="200" y="82" class="diagram-text">Velocity +</text>
-                                <text x="200" y="99" class="diagram-text-small">Acceleration</text>
-                                
-                                <rect x="290" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
-                                <text x="355" y="78" class="diagram-text">Phase Space</text>
-                                <text x="355" y="96" class="diagram-text-small">(4 quadrants)</text>
-                                
-                                <rect x="450" y="55" width="130" height="60" rx="5" class="diagram-node-highlight"/>
-                                <text x="515" y="78" class="diagram-text">Mahalanobis</text>
-                                <text x="515" y="96" class="diagram-text-small">Energy E(t)</text>
-                                
-                                <rect x="610" y="55" width="120" height="60" rx="5" class="diagram-node"/>
-                                <text x="670" y="78" class="diagram-text">Transitions</text>
-                                <text x="670" y="96" class="diagram-text-small">1st + 2nd order</text>
-                                
-                                <rect x="760" y="55" width="120" height="60" rx="5" class="diagram-node"/>
-                                <text x="820" y="78" class="diagram-text">Decision</text>
-                                <text x="820" y="96" class="diagram-text-small">Context</text>
-                                
-                                <rect x="450" y="145" width="130" height="30" rx="5" class="diagram-node-secondary"/>
-                                <text x="515" y="165" class="diagram-text-small">90% stability contour</text>
-                                
-                                <path d="M110 95 L140 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M260 85 L290 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M420 85 L450 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M580 85 L610 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M730 85 L760 85" class="diagram-arrow" marker-end="url(#arrowhead)"/>
-                                <path d="M515 115 L515 145" class="diagram-arrow-dashed" marker-end="url(#arrowhead)"/>
-                            </svg>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Phase Space Mapping:</strong> Returns as velocity, change in momentum as acceleration—each day becomes a coordinate in 2D phase space</li>
-                                <li><strong>Mahalanobis Energy:</strong> E(t) = x&#x1D40;&#x3A3;&#x207B;&#xB9;x measures distance from equilibrium, accounting for covariance structure</li>
-                                <li><strong>Markov Transitions:</strong> 1st-order transition matrix plus 2nd-order tensor (previous regime conditions the next)</li>
-                                <li><strong>Energy-Conditioned Splits:</strong> Separate transition behavior inside vs outside the 90% stability ellipse</li>
-                                <li><strong>Survival Analysis:</strong> Kaplan–Meier curves for regime duration with current dwell marker</li>
-                            </ul>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Output</h4>
-                            <p>Live at <a href="https://markovchainfinance.com" target="_blank">markovchainfinance.com</a>. Validated on BTC-USD with 3,653 days of data. Three tools in production: Phase Regime analysis, Regime Detector with LLM explanations, and Portfolio Optimizer with diversification metrics.</p>
-                        </div>
-
-                        <div class="project__section project__section--reflection">
-                            <h4>What I'd Do Differently</h4>
-                            <p>Covariance window sensitivity matters more than model complexity. I spent time on elaborate regime definitions before discovering that the rolling window for estimating Σ was the dominant factor in output stability.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project: Multi-model qualitative research -->
-                <article class="project project--collapsed" data-project="qual-research">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Qualitative Research Coded by Three Models</h3>
-                            <span class="project__context">Public-health interview study · 2026</span>
-                            <p class="project__summary">21 bilingual interviews coded independently by Claude, GPT-4o and Gemini</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Approach</h4>
-                            <ul>
-                                <li><strong>Transcription:</strong> Urdu-English interviews transcribed with speaker separation</li>
-                                <li><strong>Independent coding:</strong> Three models coded every transcript separately, the same multi-reviewer pattern used in automated review</li>
-                                <li><strong>Synthesis:</strong> Codes reconciled into 41 codes and 6 themes, compared across the study's two participant groups by breadth and depth</li>
-                            </ul>
-                        </div>
-
-                        <div class="project__section">
-                            <h4>Output</h4>
-                            <p>A full thematic analysis report with group comparisons, produced in place of manual coding by a research team and flagged for researcher review.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project: Papas Den -->
-                <article class="project project--collapsed" data-project="papas-den">
-                    <div class="project__header">
-                        <div class="project__header-content">
-                            <h3 class="project__title">Papas Den: Handwritten Receipts to Clean Data</h3>
-                            <span class="project__context">For a friend's business · 2026 · in daily use</span>
-                            <p class="project__summary">Drag-and-drop receipt digitization feeding a business data platform</p>
-                        </div>
-                        <span class="project__toggle">+</span>
-                    </div>
-
-                    <div class="project__body">
-                        <div class="project__section">
-                            <h4>Output</h4>
-                            <p>Handwritten receipts go in by drag and drop and come out as a spreadsheet ready to load into the business's data platform. It replaced reading each receipt by hand and runs daily, at around 10 receipts a day.</p>
-                        </div>
-                    </div>
-                </article>
-                            </div>
-        </section>
-
-        <!-- ==================== MARKOV CHAIN FINANCE ==================== -->
-        <section class="mcf section" id="mcf">
-            <div class="mcf__container container">
-                <h2 class="section__title">Markov Chain Finance</h2>
-                <p class="mcf__subtitle">Decision-Support Research Platform</p>
-                
-                <blockquote class="mcf__philosophy">
-                    "Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen."
-                </blockquote>
-
-                <p class="mcf__description">
-                    A decision-support platform for self-directed investors and quantitative practitioners.
-                    The core philosophy is context over prediction—showing what kind of environment you're operating in
-                    rather than forecasting what happens next. Not alpha generation. Decision quality under uncertainty.
-                </p>
-
-                <div class="mcf__themes">
-                    <h3>The Framework</h3>
-                    <p class="mcf__framework-description">
-                        Phase space analysis applied to financial assets. Price is mapped into velocity (returns) and acceleration (change in momentum).
-                        Each trading day becomes a point in phase space—most cluster near the origin, statistically unremarkable.
-                        Distance from equilibrium is measured using Mahalanobis energy E(t) = x&#x1D40;&#x3A3;&#x207B;&#xB9;x.
-                        Breaching the 90% stability contour signals a statistically rare state.
-                    </p>
-                </div>
-
-                <div class="mcf__building">
-                    <h3>Live Tools</h3>
-                    <ul>
-                        <li><strong>Phase Regime:</strong> Map any ticker into velocity–acceleration phase space. Four quadrants (Accelerating Up, Decelerating Down, Accelerating Down, Decelerating Up). 1st-order Markov transitions, 2nd-order transition tensor, energy-conditioned splits inside vs outside the 90% stability ellipse, Kaplan–Meier survival curves per regime, forward return distributions</li>
-                        <li><strong>Regime Detector:</strong> Volatility state (Low / Medium / High via 20-day rolling std percentile) + trend state (Strong / Weak / Negative via 50d vs 200d SMA). Transition probability matrix, historical regime comparisons, LLM-powered decision framing. Supported assets: SPY, QQQ, BTC-USD, ETH-USD, GLD</li>
-                        <li><strong>Portfolio Optimizer:</strong> Effective number of bets (PCA-based diversification measure), Mean-Variance (MPT) max-Sharpe weights, Risk Parity equal-risk-contribution weights, drawdown analysis, Sortino ratio comparison across strategies</li>
-                    </ul>
-                </div>
-
-                <div class="mcf__themes">
-                    <h3>Research Layer</h3>
-                    <ul>
-                        <li><strong>Factor-Level Phase Space:</strong> Rolling PCA on an 8-asset universe extracts three factors—PC1 Market, PC2 Rotation, PC3 Idiosyncratic—each mapped independently into phase space</li>
-                        <li><strong>Lead/Lag Discovery:</strong> PC1 regime transitions lead asset-level transitions by approximately 13 days</li>
-                        <li><strong>Cross-Factor Conflict:</strong> A conflict score measuring when factors disagree—high conflict degrades transition predictability. Conflict-conditioned transition matrices show regime persistence changes under high vs low conflict</li>
-                        <li><strong>Rebalancing:</strong> Energy-triggered rebalancing with a low-conflict filter achieves Sharpe 1.48 vs calendar monthly at 1.44</li>
-                        <li><strong>How SPY Leaves Normal:</strong> On 10 years of SPY, regimes persist about 91% of days inside and outside the stability basin alike, but 6 of 16 basin exits came through Accelerating Down, a regime covering only 14% of normal days</li>
-                        <li><strong>Stress-Strain Analysis:</strong> Drawdown event detection (peak → trough → recovery) with stress–strain curve fitting across assets</li>
-                    </ul>
-                </div>
-
-                <div class="mcf__stack">
-                    <h3>Stack</h3>
-                    <p>React · Vite · Flask · Azure Functions · Supabase · Python · NumPy · Plotly · yfinance</p>
-                </div>
-
-                <div class="mcf__links">
-                    <a href="https://markovchainfinance.com" target="_blank" class="mcf__link">
-                        <i class="uil uil-globe"></i> markovchainfinance.com
-                    </a>
-                    <a href="https://github.com/sheharyarakhtar" target="_blank" class="mcf__link">
-                        <i class="uil uil-github-alt"></i> Research Notebooks
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== NOTES ==================== -->
-        <section class="notes section" id="notes">
-            <div class="notes__container container">
-                <h2 class="section__title">Writing</h2>
-
-                <div class="notes__grid">
-                    <a href="https://towardsdatascience.com/basics-of-markov-chain-monte-carlo-algorithms-a53a6b3a763d" target="_blank" class="note">
-                        <h3 class="note__title">Basics of Markov Chain Monte Carlo</h3>
-                        <p class="note__excerpt">How MCMC algorithms use randomness to find high-probability regions in Bayesian inference—intuition over formulas.</p>
-                        <span class="note__meta">Towards Data Science</span>
-                        <span class="note__read">Read →</span>
-                    </a>
-
-                    <a href="https://towardsdatascience.com/determining-the-importance-of-predictor-variables-in-bayesian-linear-regression-using-residual-786f5eea0d12" target="_blank" class="note">
-                        <h3 class="note__title">Feature Importance in Bayesian Regression</h3>
-                        <p class="note__excerpt">Why feature selection matters in Bayesian models—assessing true predictive value based on causal impact, not correlation.</p>
-                        <span class="note__meta">Towards Data Science</span>
-                        <span class="note__read">Read →</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/pulse/retrieval-augmented-generation-rags-sheharyar-akhtar-qfs4f/" target="_blank" class="note">
-                        <h3 class="note__title">Building RAG Systems from Scratch</h3>
-                        <p class="note__excerpt">Architecture decisions when building retrieval-augmented generation—from embeddings to production deployment.</p>
-                        <span class="note__meta">LinkedIn</span>
-                        <span class="note__read">Read →</span>
-                    </a>
-                            </div>
-            </div>
-        </section>
-
-        <!-- ==================== CONTACT ==================== -->
-        <section class="contact section" id="contact">
-            <div class="contact__container container">
-                <h2 class="section__title">Get in Touch</h2>
-                
-                <p class="contact__text">
-                    Building a GenAI product, need evaluation you can trust, or want an audit of your RL environments? I'm available for contract work and fixed-scope builds. Book a call or send a message.
-                </p>
-                
-                <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" class="contact__calendly">
-                    <i class="uil uil-calendar-alt"></i> Schedule a Meeting
-                </a>
-                
-                <div class="contact__grid">
-                    <div class="contact__info">
-                        <div class="contact__links">
-                            <a href="mailto:sheharyar7146@gmail.com" class="contact__link">
-                                <i class="uil uil-envelope"></i>
-                                sheharyar7146@gmail.com
-                            </a>
-                            <a href="https://www.linkedin.com/in/sheharyarakhtar/" target="_blank" class="contact__link">
-                                <i class="uil uil-linkedin-alt"></i>
-                                LinkedIn
-                            </a>
-                            <a href="https://github.com/sheharyarakhtar" target="_blank" class="contact__link">
-                                <i class="uil uil-github-alt"></i>
-                                GitHub
-                            </a>
-                        </div>
-                        
-                        <div class="contact__stack">
-                            <span class="contact__stack-label">Stack:</span>
-                            Python · R · PyMC · Stan · PySpark · Docker · GCP · Azure · AWS
-                        </div>
-                    </div>
-                    
-                    <div class="contact__form-container">
-                        <form 
-                            class="contact__form" 
-                            action="https://docs.google.com/forms/d/e/1FAIpQLSd3TTneo8USmLhFHL4Z_DLnCMQP7i3rKNO9ZxCQ0CNuxVcdEQ/formResponse" 
-                            method="POST" 
-                            target="hidden_iframe"
-                        >
-                            <div class="contact__form-group">
-                                <input 
-                                    type="text" 
-                                    name="entry.482854413" 
-                                    id="name"
-                                    class="contact__input" 
-                                    placeholder="Name"
-                                    required
-                                >
-                        </div>
-                            <div class="contact__form-group">
-                                <input 
-                                    type="email" 
-                                    name="entry.1339320471" 
-                                    id="email"
-                                    class="contact__input" 
-                                    placeholder="Email"
-                                    required
-                                >
-                    </div>
-                            <div class="contact__form-group">
-                                <textarea 
-                                    name="entry.1070032049" 
-                                    id="message"
-                                    class="contact__input contact__textarea"
-                                    placeholder="Message"
-                                    rows="4"
-                                    required
-                                ></textarea>
-                        </div>
-                            <button type="submit" class="contact__submit">
-                                Send Message
-                            </button>
-                        </form>
-                        <div id="form-success" class="form-success">
-                            Message sent! I'll get back to you soon.
-                    </div>
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-                        </div>
-                    </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <p class="footer__copy">© 2026 Sheharyar Akhtar</p>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" aria-labelledby="hero-title">
+        <span class="label">Lahore, Pakistan · working remotely</span>
+        <h1 id="hero-title">I build GenAI products, and the <em>evaluation</em> that tells you they work.</h1>
+        <p class="lede">Five years across production ML, enterprise data and LLM evaluation. For the last two, I've built the systems that review AI training data at scale for frontier-lab and big-tech AI programs. I take on contract work, fixed-scope builds and evaluation audits.</p>
+        <div class="linkrow">
+            <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" rel="noopener" class="primary">Book a call</a>
+            <a href="mailto:sheharyar7146@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/sheharyarakhtar/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/sheharyarakhtar" target="_blank" rel="noopener">GitHub</a>
+            <a href="assets/pdf/Resume_Sheharyar_Akhtar.pdf" target="_blank" rel="noopener">CV</a>
         </div>
-    </footer>
+        <div class="proof" aria-label="Highlights">
+            <span><b>17</b> languages under automated review</span>
+            <span><b>1,000+</b> annotators</span>
+            <span><b>5 to 10%</b> revenue lift, production A/B</span>
+            <span><b>3</b> public benchmark audits</span>
+        </div>
+    </section>
 
-    <script src="assets/js/main-new.js"></script>
+    <!-- ==================== HIRE ==================== -->
+    <section class="block" id="hire" aria-labelledby="hire-title">
+        <div class="rail"><span class="label" id="hire-title">Work with me</span></div>
+        <div class="content">
+            <div class="services">
+                <div class="svc">
+                    <span class="mono">Contract</span>
+                    <h3>Embedded with your team</h3>
+                    <p>Part-time or full-time, by the hour or the month. LLM pipelines, automated review, evaluation and the data work around them.</p>
+                </div>
+                <div class="svc">
+                    <span class="mono">Fixed-scope build</span>
+                    <h3>A GenAI product, start to finish</h3>
+                    <p>A defined product or prototype for a set price, from brief to deployed app, with evaluation built in so you know how often it is right.</p>
+                </div>
+                <div class="svc">
+                    <span class="mono">Audit · Rubric Agents</span>
+                    <h3>Find what's broken</h3>
+                    <p>Send 20 tasks from your RL environments or eval sets. You get back which ones are broken, and why, each finding reproduced by running it.</p>
+                </div>
+            </div>
+            <p class="note">Rates are agreed on a short call once the scope is clear.</p>
+        </div>
+    </section>
+
+    <!-- ==================== WORK ==================== -->
+    <section class="block" id="work" aria-labelledby="work-title">
+        <div class="rail">
+            <span class="label" id="work-title">Selected work</span>
+            <p>Client work for Turing is described without naming the AI companies it was delivered to.</p>
+        </div>
+        <div class="content">
+
+            <span class="label sub">Products</span>
+            <div class="cards">
+                <article class="card">
+                    <div class="shot strip"><img src="assets/img/Portfolio/photoshoot-run.jpg" alt="Four photoshoot frames of the same model in a beige top and burgundy skirt, from front, back, side and a closer upper-body angle" loading="lazy"></div>
+                    <span class="meta">For an AI content studio · Oct 2026</span>
+                    <h3>A complete photoshoot from a few uploads</h3>
+                    <p>Upload a model, the garments and the shoes, and get back a finished, consistent photoshoot. Claude plans the shoot as director; Gemini renders it.</p>
+                    <details class="more">
+                        <summary>How it works</summary>
+                        <ul>
+                            <li>Claude plans the shot list (front, back, side profile, close shots) and picks which reference images each shot needs.</li>
+                            <li>Gemini renders shots in parallel with retries, at the chosen aspect ratio and resolution, in about 20 to 40 seconds each.</li>
+                            <li>Every run is stored with its prompts, references and timings, so a shoot can be reviewed and rerun.</li>
+                        </ul>
+                    </details>
+                    <div class="chips"><span>Claude as director</span><span>Gemini renders</span><span>Next.js · Vercel</span></div>
+                </article>
+
+                <article class="card">
+                    <div class="shot contain"><img src="assets/img/Portfolio/design-studio-techpack.jpg" alt="Tech pack page for a sea-green Henley tee with a beach graphic, listing style number, fit, fabric, colorway and print technique" loading="lazy"></div>
+                    <span class="meta">Own product · Oct 2026</span>
+                    <h3>Design Studio for apparel collections</h3>
+                    <p>A brief, a palette and reference images become a lineup of designs. Shortlist them into a collection and export a tech pack a manufacturer can work from.</p>
+                    <details class="more">
+                        <summary>What the tech pack holds</summary>
+                        <p>Each style gets a style number, garment type, fit, fabric, a colorway with hex values, and print technique and placement, plus a line sheet for the whole collection.</p>
+                    </details>
+                    <div class="chips"><span>brief to tech pack</span><span>Next.js · Vercel</span></div>
+                    <a class="out" href="https://model-spec.vercel.app" target="_blank" rel="noopener">model-spec.vercel.app</a>
+                </article>
+            </div>
+
+            <span class="label sub sub-gap">Evaluation at scale</span>
+            <div class="cards">
+                <article class="card">
+                    <div class="viz" aria-hidden="true">
+                        <div class="big">
+                            <div><b>17</b><span>languages</span></div>
+                            <div><b>1,000+</b><span>annotators reviewed</span></div>
+                        </div>
+                    </div>
+                    <span class="meta">Turing · big-tech AI program · Aug 2025 to Jan 2026</span>
+                    <h3>An automated reviewer in production</h3>
+                    <p>As one of two engineers on the design, I built the reviewer that checks annotation quality inside a labeling platform. I defined the quality dimensions, wrote the system and agent prompts, and took it to production.</p>
+                    <details class="more">
+                        <summary>Earlier roles on the program</summary>
+                        <ul>
+                            <li>Pod lead: managed a team of 5 annotators, with onboarding, training and daily QA reviews.</li>
+                            <li>Calibrator: the core-team role that sets the quality bar for the whole program, so hallucinated or unreasoned annotations don't pass.</li>
+                        </ul>
+                    </details>
+                    <div class="chips"><span>quality dimensions</span><span>agent prompts</span><span>production</span></div>
+                </article>
+
+                <article class="card">
+                    <div class="viz" aria-hidden="true">
+                        <div class="runs">
+                            <div><span>reference run</span><span class="p">must pass</span></div>
+                            <div><span>no-op run</span><span class="f">must fail</span></div>
+                            <div><span>minimal-change probe</span><span class="p">must pass</span></div>
+                        </div>
+                    </div>
+                    <span class="meta">Turing · Jul to Sep 2026</span>
+                    <h3>Audit and repair for agentic tasks</h3>
+                    <p>A pipeline that finds and repairs broken agentic tasks. Every task faces two runs: the known-good solution must pass, and a run that does nothing must fail. Tasks that slip either way are repaired and run again.</p>
+                    <div class="chips"><span>golden trajectory</span><span>no-op run</span><span>auto-repair</span></div>
+                </article>
+
+                <article class="card">
+                    <div class="viz" aria-hidden="true">
+                        <div class="flow">
+                            <div><span>CoT platform</span><span>ReAct platform</span><span>UI platform</span></div>
+                            <div><i>merged into</i></div>
+                            <div><span>one evaluation API</span><i>→</i><span>client frontend</span></div>
+                        </div>
+                    </div>
+                    <span class="meta">Turing · Jan to Jun 2026</span>
+                    <h3>Evaluation platforms, merged into one API</h3>
+                    <p>Built evaluation platforms for chain-of-thought and ReAct-style annotation projects, then merged them into one service whose API the client's frontend team wired into their workflow.</p>
+                    <details class="more">
+                        <summary>The UI reviewer</summary>
+                        <p>Also built a reviewer for UI annotations that judges each action from the difference between the interface's starting and final state.</p>
+                    </details>
+                    <div class="chips"><span>CoT and ReAct</span><span>API service</span><span>UI state diffs</span></div>
+                </article>
+
+                <article class="card">
+                    <div class="viz" aria-hidden="true">
+                        <div class="steps"><span>repo tree</span><i>→</i><span>files</span><i>→</i><span>functions</span><i>→</i><span class="end">fix</span></div>
+                    </div>
+                    <span class="meta">Turing · frontier-lab coding program · Dec 2024 to May 2025</span>
+                    <h3>A staged code-repair pipeline</h3>
+                    <p>An Agentless-style pipeline for SWE-bench-style tasks that narrows the problem step by step before attempting a fix. The client adopted it for a five-month campaign, with me as the campaign's tooling lead.</p>
+                    <div class="chips"><span>4 and 6 steps</span><span>Colab · GCP · Kubernetes</span><span>adopted by client</span></div>
+                </article>
+            </div>
+
+            <span class="label sub sub-gap">Smaller builds</span>
+            <div class="cards">
+                <article class="card">
+                    <span class="meta">Public-health interview study · 2026</span>
+                    <h3>Qualitative research coded by three models</h3>
+                    <p>Transcribed 21 bilingual Urdu-English interviews with speaker separation, then had Claude, GPT-4o and Gemini code them independently. Their codes were reconciled into 41 codes and 6 themes and compared across two participant groups.</p>
+                    <div class="chips"><span>21 interviews</span><span>3 independent coders</span><span>41 codes · 6 themes</span></div>
+                </article>
+                <article class="card">
+                    <span class="meta">For a friend's business · 2026</span>
+                    <h3>Papas Den: handwritten receipts to clean data</h3>
+                    <p>Receipts go in by drag and drop, and a spreadsheet comes out, ready to load into the business's data platform. It replaced reading each receipt by hand and is in daily use, at around 10 receipts a day.</p>
+                    <div class="chips"><span>in daily use</span><span>~10 receipts a day</span></div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== VENTURES ==================== -->
+    <section class="block" id="ventures" aria-labelledby="ventures-title">
+        <div class="rail">
+            <span class="label" id="ventures-title">Ventures</span>
+            <p>Two things I run alongside client work.</p>
+        </div>
+        <div class="content">
+            <div class="ventures">
+                <div class="venture">
+                    <span class="tag">AI evaluation and QA · since Oct 2026</span>
+                    <h3>Rubric Agents</h3>
+                    <p>Quality control for agentic tasks, RL environments and AI training data. Five layers of review: deterministic checks, a rubric agent per quality dimension, execution validation, trajectory analysis, and repair and routing.</p>
+                    <div class="audit-list">
+                        <div><b>DeepSWE</b><span>6 of the 30 hardest tasks reject a correct solution</span></div>
+                        <div><b>FrontierSWE</b><span>13 of 13 tasks reviewed have a score-changing finding</span></div>
+                        <div><b>Terminal-Bench</b><span>4 of 5 sampled tasks passed the standard gate but still had a defect</span></div>
+                    </div>
+                    <div class="links">
+                        <a href="https://rubricagents.com/evaluations" target="_blank" rel="noopener">Read the audits</a>
+                        <a href="https://rubricagents.com" target="_blank" rel="noopener">rubricagents.com</a>
+                    </div>
+                </div>
+
+                <div class="venture">
+                    <span class="tag">Market research platform · since Aug 2025</span>
+                    <h3>Markov Chain Finance</h3>
+                    <figure>
+                        <img src="assets/img/Portfolio/mcf-spy-bowl.jpg" alt="A glowing bowl-shaped phase portrait of SPY, with a gold ring marking the 90 percent stability basin and four regime labels around the rim" loading="lazy">
+                        <figcaption>SPY, last 3 years. Height is distance from normal.</figcaption>
+                    </figure>
+                    <p>Context over prediction. Each trading day is placed by the velocity and acceleration of price, its Mahalanobis distance from normal behaviour is measured, and regime transitions are estimated as Markov chains.</p>
+                    <details class="more">
+                        <summary>Tools and research</summary>
+                        <ul>
+                            <li><strong>Phase Regime:</strong> four regimes, first and second-order transitions, energy-conditioned splits inside and outside a 90% stability basin, and survival curves per regime.</li>
+                            <li><strong>Regime Detector:</strong> volatility and trend states with transition matrices for SPY, QQQ, BTC, ETH and GLD.</li>
+                            <li><strong>Portfolio Optimizer:</strong> effective number of bets, max-Sharpe and risk-parity weights, and drawdown analysis.</li>
+                            <li><strong>SPY regime exits:</strong> over 10 years, regimes persist about 91% of days inside and outside the basin alike, but 6 of 16 basin exits came through Accelerating Down, a regime covering only 14% of normal days.</li>
+                            <li><strong>Factor-level phase space:</strong> PC1 regime transitions lead asset-level transitions by about 13 days on an 8-asset universe.</li>
+                        </ul>
+                    </details>
+                    <div class="links"><a href="https://markovchainfinance.com" target="_blank" rel="noopener">markovchainfinance.com</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="block" id="experience" aria-labelledby="exp-title">
+        <div class="rail"><span class="label" id="exp-title">Experience</span></div>
+        <div class="content">
+            <div class="role">
+                <div class="when">Sep 2024 to now</div>
+                <div>
+                    <h3>Turing <small>client · contract</small></h3>
+                    <ul>
+                        <li>Trainer, then pod lead within two weeks, then calibrator within two months on a frontier-lab agentic coding program.</li>
+                        <li>Tooling champion for a five-month Agentless campaign the client adopted.</li>
+                        <li>Since then, auto-reviewers, evaluation platforms and task-repair pipelines for big-tech AI clients. Now scoping research-grade annotation sets for labs.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="role">
+                <div class="when">Aug 2023 to Nov 2024</div>
+                <div>
+                    <h3>Systems Limited <small>data and AI consultant</small></h3>
+                    <ul>
+                        <li>ESG data ingestion and validation platform, with the app around it, for a global consumer goods company, standardizing data across 50+ business units.</li>
+                        <li>Credit scoring and forecasting pipelines with PySpark and MLflow on AWS and Azure, with SHAP explanations for compliance.</li>
+                        <li>20+ enterprise proposals across the US, the Gulf, Australia and Pakistan (pitch decks, RFP responses, bills of quantities), contributing $5M+ in pipeline. Led a bid for a Gulf telecom operator.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="role">
+                <div class="when">Apr 2021 to Aug 2023</div>
+                <div>
+                    <h3>Afiniti <small>data scientist I to II</small></h3>
+                    <ul>
+                        <li>Caller-agent pairing for telecom operators: Bayesian IRT models in Stan estimate agent performance by caller segment, feeding a production optimizer.</li>
+                        <li>5 to 10% revenue lift across clients. On one queue, 8%+ revenue per call against the client's own routing algorithm on an 80/20 benchmark split.</li>
+                        <li>Led client launches in Iberia, including two pilots that converted to full contracts. Owned the SQL that matches outcomes to calls, and engineered real-time features that improved model validation by 50%+.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="edu">BE Mechanical Engineering, GIKI. Came to data science through self-directed study.</p>
+        </div>
+    </section>
+
+    <!-- ==================== PRINCIPLES ==================== -->
+    <section class="block" aria-labelledby="think-title">
+        <div class="rail"><span class="label" id="think-title">How I think</span></div>
+        <div class="content">
+            <ol class="principles">
+                <li><span>01</span><p>Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen.</p></li>
+                <li><span>02</span><p>A model that can't explain why it's wrong is more dangerous than no model at all.</p></li>
+                <li><span>03</span><p>Regimes matter more than averages. A 2% move in a calm market is not the same as a 2% move in a volatile one.</p></li>
+                <li><span>04</span><p>The hardest problems are rarely technical. They're about calibrating human judgment at scale without losing signal.</p></li>
+                <li><span>05</span><p>If a tool doesn't change a decision, it's a dashboard. I build systems that force better choices under uncertainty.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ==================== WRITING ==================== -->
+    <section class="block" id="writing" aria-labelledby="writing-title">
+        <div class="rail"><span class="label" id="writing-title">Writing</span></div>
+        <div class="content">
+            <div class="writing">
+                <a href="https://towardsdatascience.com/basics-of-markov-chain-monte-carlo-algorithms-a53a6b3a763d" target="_blank" rel="noopener">
+                    <h3>Basics of Markov Chain Monte Carlo</h3>
+                    <p>How MCMC uses randomness to find high-probability regions in Bayesian inference, with intuition over formulas.</p>
+                    <span class="mono">Towards Data Science</span>
+                </a>
+                <a href="https://towardsdatascience.com/determining-the-importance-of-predictor-variables-in-bayesian-linear-regression-using-residual-786f5eea0d12" target="_blank" rel="noopener">
+                    <h3>Feature importance in Bayesian regression</h3>
+                    <p>Assessing a predictor's real contribution in a Bayesian model, beyond correlation.</p>
+                    <span class="mono">Towards Data Science</span>
+                </a>
+                <a href="https://www.linkedin.com/pulse/retrieval-augmented-generation-rags-sheharyar-akhtar-qfs4f/" target="_blank" rel="noopener">
+                    <h3>Building RAG systems from scratch</h3>
+                    <p>Architecture decisions in retrieval-augmented generation, from embeddings to deployment.</p>
+                    <span class="mono">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TOOLS ==================== -->
+    <section class="block" aria-labelledby="tools-title">
+        <div class="rail"><span class="label" id="tools-title">Tools</span></div>
+        <div class="content">
+            <div class="tools">
+                <div><span class="label">Modeling</span><p>Python, R, Stan, PyMC, SQL, Bayesian and Markov models, experimentation</p></div>
+                <div><span class="label">LLMs</span><p>Claude, GPT and Gemini APIs, agent and prompt design, automated review</p></div>
+                <div><span class="label">Apps</span><p>Next.js, React, Flask, Vercel, Supabase, Postgres</p></div>
+                <div><span class="label">Data and cloud</span><p>PySpark, MLflow, Azure ML, AWS, GCP, Docker</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="left">
+            <span class="label">Contact</span>
+            <h2 id="contact-title">Have a GenAI product to build, or one you need to trust?</h2>
+            <p>Book a call, email <a href="mailto:sheharyar7146@gmail.com">sheharyar7146@gmail.com</a>, or send a message here. Based in Lahore (UTC+5), working with teams in any time zone.</p>
+            <div class="linkrow">
+                <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" rel="noopener" class="primary">Book a call</a>
+                <a href="https://www.linkedin.com/in/sheharyarakhtar/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/sheharyarakhtar" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div>
+            <form class="msg" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd3TTneo8USmLhFHL4Z_DLnCMQP7i3rKNO9ZxCQ0CNuxVcdEQ/formResponse" method="POST" target="hidden_iframe">
+                <label class="label" for="name">Name</label>
+                <input type="text" name="entry.482854413" id="name" required>
+                <label class="label" for="email">Email</label>
+                <input type="email" name="entry.1339320471" id="email" required>
+                <label class="label" for="message">Message</label>
+                <textarea name="entry.1070032049" id="message" required></textarea>
+                <button type="submit">Send message</button>
+                <p class="sent" id="form-success" hidden>Message sent. I'll reply by email.</p>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" title="Form submission" style="display:none"></iframe>
+        </div>
+    </section>
+
+    <footer class="foot">© 2026 Sheharyar Akhtar</footer>
+</div>
+
+<script>
+(function () {
+    var form = document.getElementById('contact-form');
+    var frame = document.getElementById('hidden_iframe');
+    var ok = document.getElementById('form-success');
+    var submitted = false;
+    if (!form || !frame) return;
+    form.addEventListener('submit', function () { submitted = true; });
+    frame.addEventListener('load', function () {
+        if (!submitted) return;
+        ok.hidden = false;
+        form.reset();
+        submitted = false;
+        setTimeout(function () { ok.hidden = true; }, 6000);
+    });
+})();
+</script>
 </body>
 </html>
