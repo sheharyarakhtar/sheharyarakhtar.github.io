@@ -406,3 +406,8 @@ form.msg button { justify-self: start; border: 0; cursor: pointer; font: inherit
 
 .venture .logo img { width: 40px; height: 40px; border-radius: 10px; object-fit: cover; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35); }
 .venture .logo { font-size: 1.05rem; gap: 0.75rem; }
+
+/* Anchor jumps land below the sticky nav */
+section[id] { scroll-margin-top: 4rem; }
+.frame img, .venture figure img { height: auto; }
+.venture figure img { height: 15rem; }
