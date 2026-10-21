@@ -30,6 +30,7 @@
 <body>
 
 <header class="nav band">
+    <span class="progress" aria-hidden="true"></span>
     <div class="col">
         <a href="#" class="brand"><span class="mark">SA</span>Sheharyar Akhtar</a>
         <nav aria-label="Sections">
@@ -44,7 +45,7 @@
 
 <main>
     <!-- ==================== HERO ==================== -->
-    <section class="hero band" aria-labelledby="hero-title">
+    <section class="hero band" aria-labelledby="hero-title" data-sp="out">
         <canvas class="field" aria-hidden="true"></canvas>
         <div class="col">
             <div>
@@ -62,24 +63,11 @@
                     <a href="assets/pdf/Resume_Sheharyar_Akhtar.pdf" target="_blank" rel="noopener">CV</a>
                 </div>
             </div>
-
-            <div class="verdict" aria-label="Example audit result">
-                <div class="head"><b>freight-dispatch-shift</b><span class="muted">Terminal-Bench</span></div>
-                <div class="src">From a real audit by Rubric Agents</div>
-                <ol>
-                    <li style="--i:0"><i class="dot p"></i><div><strong>Deterministic checks</strong><span class="d">38 checks, no findings</span></div><span class="tag p" style="--i:0">PASS</span></li>
-                    <li style="--i:1"><i class="dot f"></i><div><strong>Rubric review</strong><span class="d">Correct alternative answers are rejected</span></div><span class="tag f" style="--i:1">FLAG</span></li>
-                    <li style="--i:2"><i class="dot p"></i><div><strong>Reference run</strong><span class="d">Shipped solution scores 1</span></div><span class="tag p" style="--i:2">PASS</span></li>
-                    <li style="--i:3"><i class="dot p"></i><div><strong>Do-nothing run</strong><span class="d">Scores 0, as it should</span></div><span class="tag p" style="--i:3">PASS</span></li>
-                    <li style="--i:4"><i class="dot f"></i><div><strong>Execution probe</strong><span class="d">An equally valid reason scores 0 (227 of 232 points)</span></div><span class="tag v" style="--i:4">PROVEN</span></li>
-                </ol>
-                <div class="route">● Routed: needs a human</div>
-            </div>
         </div>
     </section>
 
     <!-- ==================== STATS ==================== -->
-    <section class="stats band" aria-label="Highlights">
+    <section class="stats band" aria-label="Highlights" data-sp="bar">
         <div class="col">
             <div class="stat reveal" style="--d:0"><b data-to="17">17</b><span>languages under automated review</span></div>
             <div class="stat reveal" style="--d:1"><b data-to="1000" data-suf="+">1,000+</b><span>annotators reviewed in production</span></div>
@@ -93,7 +81,7 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Work with me</span>
-                <h2 id="hire-title">Three ways to bring me in.</h2>
+                <h2 id="hire-title" data-sp="words">Three ways to bring me in.</h2>
             </div>
             <div class="services">
                 <div class="svc reveal" style="--d:0">
@@ -121,7 +109,7 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Selected work · products</span>
-                <h2 id="work-title">Products I've built and shipped.</h2>
+                <h2 id="work-title" data-sp="words">Products I've built and shipped.</h2>
             </div>
 
             <div class="show">
@@ -137,7 +125,7 @@
                         </ul>
                         <div class="chips"><span>Claude as director</span><span>Gemini renders</span><span>Next.js · Vercel</span></div>
                     </div>
-                    <div class="frame scrolly">
+                    <div class="frame" data-sp="frame">
                         <div class="bar"><i></i><i></i><i></i><span>run · 5 of 5 shots rendered</span></div>
                         <img src="assets/img/Portfolio/photoshoot-run.jpg" alt="Four photoshoot frames of the same model in a beige top and burgundy skirt, from front, back, side and a closer upper-body angle" loading="lazy">
                     </div>
@@ -151,7 +139,7 @@
                         <div class="chips"><span>lineup generation</span><span>tech pack export</span><span>Next.js · Vercel</span></div>
                         <div><a href="https://model-spec.vercel.app" target="_blank" rel="noopener" class="pill ghost small">Open Design Studio <span class="arr">→</span></a></div>
                     </div>
-                    <div class="frame light scrolly">
+                    <div class="frame light" data-sp="frame">
                         <div class="bar"><i></i><i></i><i></i><span>tech pack · Beach Explorer Henley</span></div>
                         <img src="assets/img/Portfolio/design-studio-techpack.jpg" alt="Tech pack page for a sea-green Henley tee with a beach graphic, listing style number, fit, fabric, colorway and print technique" loading="lazy">
                     </div>
@@ -165,7 +153,7 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Selected work · evaluation at scale</span>
-                <h2 id="eval-title">The systems that decide what's good enough.</h2>
+                <h2 id="eval-title" data-sp="words">The systems that decide what's good enough.</h2>
                 <p>Client work for Turing, described without naming the AI companies it was delivered to.</p>
             </div>
 
@@ -192,7 +180,7 @@
 
                 <article class="card reveal" style="--d:1">
                     <div class="viz" aria-hidden="true">
-                        <div class="runs">
+                        <div class="runs" data-sp="seq">
                             <div style="--i:0"><span>reference run</span><span class="tag p">MUST PASS</span></div>
                             <div style="--i:1"><span>no-op run</span><span class="tag f">MUST FAIL</span></div>
                             <div style="--i:2"><span>repaired task, rerun</span><span class="tag p">PASS</span></div>
@@ -224,7 +212,7 @@
 
                 <article class="card reveal" style="--d:1">
                     <div class="viz" aria-hidden="true">
-                        <div class="steps"><span style="--i:0">repo tree</span><i>→</i><span style="--i:1">files</span><i>→</i><span style="--i:2">functions</span><i>→</i><span class="end" style="--i:3">fix</span></div>
+                        <div class="steps" data-sp="seq"><span style="--i:0">repo tree</span><i>→</i><span style="--i:1">files</span><i>→</i><span style="--i:2">functions</span><i>→</i><span class="end" style="--i:3">fix</span></div>
                     </div>
                     <span class="meta">Turing · frontier-lab coding program · Dec 2024 to May 2025</span>
                     <h3>A staged code-repair pipeline</h3>
@@ -256,14 +244,14 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Ventures</span>
-                <h2 id="ventures-title">Two things I run alongside client work.</h2>
+                <h2 id="ventures-title" data-sp="words">Two things I run alongside client work.</h2>
             </div>
             <div class="ventures">
                 <div class="venture ra reveal" style="--d:0">
                     <div class="logo"><span class="sq">RA</span>Rubric Agents</div>
                     <h3>Find the broken tasks before your model trains on them.</h3>
                     <p>Quality control for agentic tasks, RL environments and AI training data. Every task is checked, run and repaired, then routed to ready, needs a human, or failed.</p>
-                    <div class="audits">
+                    <div class="audits" data-sp="seq">
                         <div><b>DeepSWE</b><span>6 of the 30 hardest tasks reject a correct solution</span></div>
                         <div><b>FrontierSWE</b><span>13 of 13 tasks reviewed have a score-changing finding</span></div>
                         <div><b>Terminal-Bench</b><span>4 of 5 sampled tasks passed the standard gate but still had a defect</span></div>
@@ -277,7 +265,7 @@
                 <div class="venture mcf reveal" style="--d:1">
                     <div class="logo"><span class="sq">MCF</span>Markov Chain Finance</div>
                     <h3>Understand risk. Don't predict returns.</h3>
-                    <figure><img src="assets/img/Portfolio/mcf-spy-bowl.jpg" alt="A glowing bowl-shaped phase portrait of SPY, with a gold ring marking the 90 percent stability basin and four regime labels around the rim" loading="lazy"></figure>
+                    <figure data-sp="zoom"><img src="assets/img/Portfolio/mcf-spy-bowl.jpg" alt="A glowing bowl-shaped phase portrait of SPY, with a gold ring marking the 90 percent stability basin and four regime labels around the rim" loading="lazy"></figure>
                     <ul class="tools-list">
                         <li><span class="ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17l5-6 4 4 8-9"/></svg></span><div><strong>Regime Detector</strong><span>Volatility and trend regimes with Markov transition probabilities.</span></div></li>
                         <li><span class="ic amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="9" ry="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span><div><strong>Phase Regime</strong><span>Any asset in velocity and acceleration space, with a 90% stability basin.</span></div></li>
@@ -303,7 +291,7 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Experience</span>
-                <h2 id="exp-title">Five years, three very different rooms.</h2>
+                <h2 id="exp-title" data-sp="words">Five years, three very different rooms.</h2>
             </div>
             <div class="timeline">
                 <span class="rail" aria-hidden="true"><i></i></span>
@@ -341,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            <p class="edu reveal">BE Mechanical Engineering, GIKI. Came to data science through self-directed study.</p>
+            <p class="edu reveal">BS Mechanical Engineering, GIKI. Came to data science through self-directed study.</p>
         </div>
     </section>
 
@@ -350,14 +338,14 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">How I think</span>
-                <h2 id="think-title">Five rules I build by.</h2>
+                <h2 id="think-title" data-sp="words">Five rules I build by.</h2>
             </div>
             <ol class="principles">
-                <li class="reveal"><span>01</span>Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen.</li>
-                <li class="reveal"><span>02</span>A model that can't explain why it's wrong is more dangerous than no model at all.</li>
-                <li class="reveal"><span>03</span>Regimes matter more than averages. A 2% move in a calm market is not the same as a 2% move in a volatile one.</li>
-                <li class="reveal"><span>04</span>The hardest problems are rarely technical. They're about calibrating human judgment at scale without losing signal.</li>
-                <li class="reveal"><span>05</span>If a tool doesn't change a decision, it's a dashboard. I build systems that force better choices under uncertainty.</li>
+                <li class="reveal"><span class="n">01</span><span data-sp="words">Reducing emotionally amplified mistakes beats maximizing returns. Show people where they are, not what will happen.</span></li>
+                <li class="reveal"><span class="n">02</span><span data-sp="words">A model that can't explain why it's wrong is more dangerous than no model at all.</span></li>
+                <li class="reveal"><span class="n">03</span><span data-sp="words">Regimes matter more than averages. A 2% move in a calm market is not the same as a 2% move in a volatile one.</span></li>
+                <li class="reveal"><span class="n">04</span><span data-sp="words">The hardest problems are rarely technical. They're about calibrating human judgment at scale without losing signal.</span></li>
+                <li class="reveal"><span class="n">05</span><span data-sp="words">If a tool doesn't change a decision, it's a dashboard. I build systems that force better choices under uncertainty.</span></li>
             </ol>
         </div>
     </section>
@@ -367,7 +355,7 @@
         <div class="col">
             <div class="head-block reveal">
                 <span class="eyebrow">Writing and tools</span>
-                <h2 id="writing-title">Notes along the way.</h2>
+                <h2 id="writing-title" data-sp="words">Notes along the way.</h2>
             </div>
             <div class="writing">
                 <a class="reveal" style="--d:0" href="https://towardsdatascience.com/basics-of-markov-chain-monte-carlo-algorithms-a53a6b3a763d" target="_blank" rel="noopener">
@@ -400,7 +388,7 @@
         <div class="col">
             <div class="left reveal">
                 <span class="eyebrow">Contact</span>
-                <h2 id="contact-title">Have a GenAI product to build, or one you need to trust?</h2>
+                <h2 id="contact-title" data-sp="words">Have a GenAI product to build, or one you need to trust?</h2>
                 <p>Book a call, email <a href="mailto:sheharyar7146@gmail.com">sheharyar7146@gmail.com</a>, or send a message. Based in Lahore (UTC+5), working with teams in any time zone.</p>
                 <div class="ctas">
                     <a href="https://calendly.com/sheharyar7146/meeting-from-portfolio" target="_blank" rel="noopener" class="pill solid">Book a 20-minute call <span class="arr">→</span></a>
